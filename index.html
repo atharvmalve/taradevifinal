@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tara Devi’s Enclave</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;800&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <script src="script.js" defer></script>
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+    <style>
+      body {
+        font-family: "Instrument Sans", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Abhaya Libre", serif;
+      }
+      .fade-in-up {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1.5s ease-out forwards;
+      }
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <nav
+      class="bg-[#001901] text-white p-4 flex justify-between items-center fixed w-full top-0 z-50"
+    >
+      <div class="flex items-center space-x-2">
+        <img src="/Assets/Logo.png" alt="Logo" class="h-8" />
+        <div>
+          <h1 class="text-lg font-semibold">Tara Devi’s Enclave</h1>
+          <p class="text-xs">Phase-1</p>
+        </div>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Clubhouse</a>
+        <a href="#" class="hover:underline">Estate</a>
+        <a href="#" class="hover:underline">About Us</a>
+        <a href="#" class="hover:underline">Contact Us</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white focus:outline-none">
+          ☰
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden bg-green-900 text-white p-4 xl:flex flex-col space-y-2 mt-14"
+    >
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">Clubhouse</a>
+      <a href="#" class="hover:underline">Estate</a>
+      <a href="#" class="hover:underline">About Us</a>
+      <a href="#" class="hover:underline">Contact Us</a>
+    </div>
+    <!--Hero Section-->
+    <section class="relative w-full h-screen mt-16">
+      <img
+        src="/Assets/hero-image.jpg"
+        alt="Hillside Haven"
+        class="w-full h-full object-cover"
+      />
+      <div
+        class="absolute bottom-10 left-5 md:top-1/3 md:left-20 text-[#001901] p-6 rounded-lg fade-in-up"
+      >
+        <h2 class="text-3xl md:text-7xl font-bold">
+          Your Hillside<br />Haven Awaits
+        </h2>
+      </div>
+    </section>
+
+    <!--About us-->
+    <section class="max-w-5xl mx-auto text-center py-12 px-4">
+      <!-- Heading Section -->
+      <h3 class="text-gray-500 uppercase tracking-widest text-sm">About Us</h3>
+      <h2 class="text-3xl font-bold text-gray-900 mt-2">
+        Introducing Taradevi's Enclave
+      </h2>
+
+      <!-- Boxes Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+        <div
+          class="bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-semibold"
+        >
+          Gated Luxury Township
+        </div>
+        <div
+          class="bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-semibold"
+        >
+          Gated Luxury Township
+        </div>
+        <div
+          class="bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-semibold"
+        >
+          Gated Luxury Township
+        </div>
+        <div
+          class="bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-semibold"
+        >
+          Gated Luxury Township
+        </div>
+      </div>
+
+      <!-- Description Section -->
+      <p class="text-gray-600 mt-6 leading-relaxed text-lg">
+        Taradevi’s Enclave Phase 1 brings luxury living to Shimla, a hill
+        station famous for its verdant scenery, magnificent mountains, and
+        old-world charm with colonial-era architectural landmarks. The project,
+        perched at 1800 meters above sea level, is located in New Shimla, the
+        most premium location of Shimla. The best of nature in the heart of
+        Shimla Taradevi’s Enclave is located amid Himuda-developed sectors of
+        New Shimla, the most organized part of the city and is surrounded by
+        lush green deodar forests and a water stream, which form its natural
+        boundary.
+      </p>
+
+      <!-- Second Row of Boxes -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+        <div
+          class="bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-semibold"
+        >
+          Gated Luxury Township
+        </div>
+        <div
+          class="bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-semibold"
+        >
+          Gated Luxury Township
+        </div>
+        <div
+          class="bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-semibold"
+        >
+          Gated Luxury Township
+        </div>
+        <div
+          class="bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-semibold"
+        >
+          Gated Luxury Township
+        </div>
+      </div>
+    </section>
+
+    <!--Virtual Tour-->
+    <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+      <div class="max-w-3xl w-full p-4 md:p-8 bg-whit rounded-lg text-center">
+        <h3 class="text-gray-600 text-sm md:text-base">Virtual Tours</h3>
+        <h1 class="text-xl md:text-3xl font-bold mt-1">
+          Explore Your Future Home
+        </h1>
+
+        <div class="mt-4">
+          <video class="w-full h-auto rounded-lg" controls>
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <button
+          class="mt-6 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800"
+        >
+          Take Virtual Tour
+        </button>
+      </div>
+    </section>
+
+    <!--Commercial-->
+    <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+      <div class="w-full max-w-8xl overflow-hidden relative text-center">
+        <!-- <div class="w-2/3 items-center"> -->
+        <h3 class="text-gray-600 text-sm md:text-base">
+          Life at Taradevi's Enclave
+        </h3>
+        <h1 class="text-xl md:text-3xl font-bold mt-1">Commercial</h1>
+        <p class="px-3 md:px-48 text-gray-500 mt-1">
+          Imagine yourself living at Taradevi's Enclave. Our gallery showcases
+          the vibrant lifestyle and unparalleled beauty that define this
+          exceptional community.
+        </p>
+        <!-- </div> -->
+
+        <div
+          class="gallery js-flickity mt-10"
+          data-flickity-options='{ "wrapAround": true }'
+        >
+          <img src="./Assets/image.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/image2.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/image.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/image2.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/image.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/image2.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/image.png" alt="img" class="gallery-cell" />
+        </div>
+
+        <button
+          class="mt-14 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800"
+        >
+          Explore Commercial
+        </button>
+      </div>
+    </section>
+
+    <!--Residential-->
+    <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+      <div class="w-full max-w-8xl overflow-hidden relative text-center">
+        <!-- <div class="w-2/3 items-center"> -->
+        <!-- <h3 class="text-gray-600 text-sm md:text-base">Life at Taradevi's Enclave</h3> -->
+        <h1 class="text-xl md:text-3xl font-bold mt-1">Commercial</h1>
+        <p class="px-3 md:px-48 text-gray-500 mt-1">
+          Imagine yourself living at Taradevi's Enclave. Our gallery showcases
+          the vibrant lifestyle and unparalleled beauty that define this
+          exceptional community.
+        </p>
+        <!-- </div> -->
+
+        <div
+          class="gallery js-flickity mt-10"
+          data-flickity-options='{ "wrapAround": true }'
+        >
+          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
+          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
+          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
+          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
+          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
+          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
+          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
+        </div>
+
+        <button
+          class="mt-14 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800"
+        >
+          Explore Commercial
+        </button>
+      </div>
+    </section>
+
+    <!--Amenities-->
+    <section class="bg-gray-100 flex flex-col items-center justify-center p-6">
+      <!-- Title Section -->
+      <div class="text-center mb-6">
+        <h3 class="text-lg font-semibold text-gray-700">Exclusive Amenities</h3>
+        <h2 class="text-3xl font-bold text-gray-900">
+          The Privileges of Ownership
+        </h2>
+        <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
+          At Taradevi’s Enclave, we believe in providing an exceptional living
+          experience. Our thoughtfully curated amenities enhance your lifestyle
+          with relaxation, recreation, and convenience.
+        </p>
+      </div>
+
+      <!-- Carousel Wrapper -->
+      <div class="relative w-full max-w-5xl overflow-hidden">
+        <!-- Carousel Container -->
+        <div
+          id="amenities_carousel"
+          class="flex transition-transform duration-500 ease-in-out"
+          style="transform: translateX(0)"
+        >
+          <!-- Slide 1 -->
+          <div class="flex-shrink-0 w-full flex justify-around">
+            <div class="amenity-card">
+              <img
+                src="https://img.icons8.com/ios/100/4CAF50/gate-open.png"
+                class="h-12 mx-auto"
+              />
+              <p>Secure Gated Community</p>
+            </div>
+            <div class="amenity-card">
+              <img
+                src="https://img.icons8.com/ios/100/4CAF50/tree.png"
+                class="h-12 mx-auto"
+              />
+              <p>Landscape Garden</p>
+            </div>
+            <div class="amenity-card">
+              <img
+                src="https://img.icons8.com/ios/100/4CAF50/flash-on.png"
+                class="h-12 mx-auto"
+              />
+              <p>24/7 Power Backup</p>
+            </div>
+            <div class="amenity-card">
+              <img
+                src="https://img.icons8.com/ios/100/4CAF50/parking.png"
+                class="h-12 mx-auto"
+              />
+              <p>Private On-Site Parking</p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="flex-shrink-0 w-full flex justify-around">
+            <div class="amenity-card">
+              <img
+                src="https://img.icons8.com/ios/100/4CAF50/swimming.png"
+                class="h-12 mx-auto"
+              />
+              <p>Swimming Pool</p>
+            </div>
+            <div class="amenity-card">
+              <img
+                src="https://img.icons8.com/ios/100/4CAF50/gym.png"
+                class="h-12 mx-auto"
+              />
+              <p>Fully Equipped Gym</p>
+            </div>
+            <div class="amenity-card">
+              <img
+                src="https://img.icons8.com/ios/100/4CAF50/shield.png"
+                class="h-12 mx-auto"
+              />
+              <p>24/7 Security</p>
+            </div>
+            <div class="amenity-card">
+              <img
+                src="https://img.icons8.com/ios/100/4CAF50/bbq.png"
+                class="h-12 mx-auto"
+              />
+              <p>Barbecue Area</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button
+          id="prev_amenities"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-l-md"
+        >
+          ‹
+        </button>
+        <button
+          id="next_amenities"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-r-md"
+        >
+          ›
+        </button>
+      </div>
+    </section>
+
+    <!------------------------------>
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img
+                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Mohamed Yousef</h2>
+              <p class="description">
+                The lorem text the section that contains header with having open
+                functionality. Lorem dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img
+                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+            
+            <div class="card-content">
+                <h2 class="name">Mohamed Yousef</h2>
+                <p class="description">
+                  The lorem text the section that contains header with having open
+                  functionality. Lorem dolor sit amet consectetur adipisicing
+                  elit.
+                </p>
+  
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+  
+                <div class="card-image">
+                  <img
+                    src="https://tinypic.host/images/2022/12/19/img_avatar.png"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+              </div>
+
+         
+
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--Location advantage-->
+    <section class="bg-gray-100 flex flex-col items-center justify-center p-5">
+      <div class="text-center mb-6">
+        <h3 class="text-lg font-semibold text-gray-700">Location Advantages</h3>
+        <h2 class="text-3xl font-bold text-gray-900">
+          Prime Location in Shimla
+        </h2>
+        <p class="text-gray-600 mt-2">
+          Discover the unparalleled advantages of Taradevi's Enclave's prime
+          location of New Shimla.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="w-full max-w-4xl flex justify-center">
+        <img
+          src="image.png"
+          alt="Location Map"
+          class="w-full rounded-lg shadow-lg"
+        />
+      </div>
+
+      <!-- Carousel Wrapper -->
+      <div class="relative w-full max-w-4xl mt-6 overflow-hidden">
+        <!-- Carousel Container -->
+        <div id="carousel" class="flex transition-transform duration-500">
+          <!-- Slide 1 -->
+          <div class="flex w-full shrink-0 justify-around">
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">5 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
+            </div>
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">5 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
+            </div>
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">5 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
+            </div>
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">5 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
+            </div>
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">5 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="flex w-full shrink-0 justify-around">
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">10 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">
+                📍 Mall Road
+              </p>
+            </div>
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">12 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">📍 ISBT</p>
+            </div>
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">15 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">
+                📍 Secretariat
+              </p>
+            </div>
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">18 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">
+                📍 SDA Complex
+              </p>
+            </div>
+            <div
+              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
+            >
+              <p class="text-green-600 font-bold">20 Minutes</p>
+              <p class="text-gray-500 flex items-center text-sm">📍 Kufri</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button
+          id="prev"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-l-md"
+        >
+          ‹
+        </button>
+        <button
+          id="next"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-r-md"
+        >
+          ›
+        </button>
+      </div>
+
+      <!--s -->
+      <div class="flex justify-center mt-4 space-x-2">
+        <span
+          class="dots w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+        ></span>
+        <span
+          class="dots w-3 h-3 bg-green-500 rounded-full cursor-pointer"
+        ></span>
+      </div>
+    </section>
+
+    <!-- Contact us-->
+    <section
+      class="relative w-full h-full bg-cover bg-center"
+      style="background-image: url('./Assets/Formbackground.jpg')"
+    >
+      <div
+        class="bg-black bg-opacity-40 w-full h-full absolute top-0 left-0"
+      ></div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-10"
+      >
+        <!-- Left Section -->
+        <div class="text-white">
+          <h3 class="text-lg font-semibold uppercase">Contact Us</h3>
+          <h2 class="text-4xl font-bold mt-2">
+            Learn More About <br />
+            Taradevi's Enclave
+          </h2>
+          <p class="mt-3 text-gray-300">
+            Shiv mandir, near Sector-3, New Shimla, Shimla,<br />
+            Himachal Pradesh 171009
+          </p>
+          <div class="mt-6">
+            <iframe
+              class="w-full h-64 rounded-lg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27396.285184236484!2d77.1408994!3d31.0845276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39057855b9eaaaab%3A0xf94b32aa3e4b5c1f!2sShimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1646904536475!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Right Section (Contact Form) -->
+        <div class="bg-black bg-opacity-80 p-6 rounded-lg text-white">
+          <h3 class="text-2xl font-semibold">Get in Touch</h3>
+          <p class="text-gray-300 text-sm mt-2">
+            We will get back to you in 24 hours
+          </p>
+
+          <form id="contactForm" class="mt-4 space-y-4">
+            <div class="flex gap-3">
+              <input
+                type="text"
+                id="firstName"
+                placeholder="First Name*"
+                required
+                class="w-1/2 px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last Name"
+                class="w-1/2 px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+            </div>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Email*"
+              required
+              class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+
+            <div
+              class="flex items-center border bg-gray-800 rounded-lg px-4 py-2"
+            >
+              <span class="mr-2">🇮🇳 +91</span>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number*"
+                required
+                class="w-full bg-transparent text-white focus:outline-none"
+              />
+            </div>
+
+            <textarea
+              id="message"
+              placeholder="Inquiry"
+              rows="4"
+              class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-semibold"
+            >
+              Get in Touch
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-green-900 text-white text-center py-4">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm"
+      >
+        <a href="#" class="hover:underline">Terms & Conditions</a>
+        <p class="text-xs md:text-sm">
+          Copyright © 2024 Tara Devi's Enclave - All Rights Reserved.
+        </p>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+      </div>
+      <p class="text-xs mt-2">
+        Developed by <span class="font-semibold">Apex Byte Innovations</span>
+      </p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+      const slider = document.getElementById("slider");
+      const dots = document.querySelectorAll(".dot");
+      let index = 0;
+      const totalSlides = slider.children.length;
+
+      function updateSlider() {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((dot, i) =>
+          dot.classList.toggle("bg-green-500", i === index)
+        );
+      }
+
+      document.getElementById("next").addEventListener("click", () => {
+        index = (index + 1) % totalSlides;
+        updateSlider();
+      });
+
+      document.getElementById("prev").addEventListener("click", () => {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateSlider();
+      });
+
+      setInterval(() => {
+        index = (index + 1) % totalSlides;
+        updateSlider();
+      }, 3000);
+
+      let startX = 0;
+      slider.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      });
+
+      slider.addEventListener("touchend", (e) => {
+        let endX = e.changedTouches[0].clientX;
+        if (startX - endX > 50) {
+          index = (index + 1) % totalSlides;
+        } else if (endX - startX > 50) {
+          index = (index - 1 + totalSlides) % totalSlides;
+        }
+        updateSlider();
+      });
+
+      //-----------------------------
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent page reload
+
+          const firstName = document.getElementById("firstName").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const message = document.getElementById("message").value;
+
+          if (!firstName || !email || !phone) {
+            alert("Please fill all required fields.");
+            return;
+          }
+
+          alert("Form submitted successfully!\nWe will contact you soon.");
+
+          // Here, you can send the form data to an API or email service.
+          // Example: fetch('/submit-form', { method: 'POST', body: JSON.stringify({ firstName, email, phone, message }) });
+
+          // Reset form after submission
+          document.getElementById("contactForm").reset();
+        });
+
+      //--------------------------------------
+
+      const carousel = document.getElementById("carousel");
+      const prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+      const dot = document.querySelectorAll(".dots");
+      let currentIndex = 0;
+      const totalSlide = 2; // Since we have only 2 slides
+
+      function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dot.forEach((dot, index) => {
+          dot.classList.toggle("bg-green-500", index === currentIndex);
+          dot.classList.toggle("bg-gray-300", index !== currentIndex);
+        });
+      }
+
+      next.addEventListener("click", () => {
+        if (currentIndex < totalSlide - 1) {
+          currentIndex++;
+          updateCarousel();
+        }
+      });
+
+      prev.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+      });
+
+      dot.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          currentIndex = index;
+          updateCarousel();
+        });
+      });
+
+      //------------------------------------------
+
+      const amenitiesCarousel = document.getElementById("amenities_carousel");
+      const prevBtn = document.getElementById("prev_amenities");
+      const nextBtn = document.getElementById("next_amenities");
+
+      let currentSlideAmenities = 0;
+      const totalSlidesAmenities = 2; // Fixing the variable name
+
+      function updateAmenitiesCarousel() {
+        amenitiesCarousel.style.transform = `translateX(-${
+          currentSlideAmenities * 100
+        }%)`;
+      }
+
+      nextBtn.addEventListener("click", () => {
+        if (currentSlideAmenities < totalSlidesAmenities - 1) {
+          currentSlideAmenities++;
+          updateAmenitiesCarousel();
+        }
+      });
+
+      prevBtn.addEventListener("click", () => {
+        if (currentSlideAmenities > 0) {
+          currentSlideAmenities--;
+          updateAmenitiesCarousel();
+        }
+      });
+    </script>
+  </body>
+</html>
