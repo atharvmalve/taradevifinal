@@ -18,12 +18,8 @@
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
     />
-    <link 
-        rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <script src="script.js" defer></script>
-    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
     <style>
       body {
         font-family: "Instrument Sans", sans-serif;
@@ -63,12 +59,13 @@
       </div>
       <div class="hidden md:flex space-x-6">
         <a href="#" class="hover:underline">Home</a>
-        <a href="#" class="hover:underline">Clubhouse</a>
-        <a href="#" class="hover:underline">Estate</a>
         <a href="#" class="hover:underline">About Us</a>
+        <a href="#" class="hover:underline">Commercial</a>
+        <a href="#" class="hover:underline">Residential</a>
+        <a href="#" class="hover:underline">Amenities</a>
         <a href="#" class="hover:underline">Contact Us</a>
       </div>
-      <div class="md:hidden">
+      <div class="flex md:hidden">
         <button id="menu-toggle" class="text-white focus:outline-none">
           ☰
         </button>
@@ -77,7 +74,7 @@
 
     <div
       id="mobile-menu"
-      class="hidden md:hidden bg-green-900 text-white p-4 xl:flex flex-col space-y-2 mt-14"
+      class=" hidden md:hidden bg-green-900 text-white p-4 flex flex-col space-y-2 mt-14"
     >
       <a href="#" class="hover:underline">Home</a>
       <a href="#" class="hover:underline">Clubhouse</a>
@@ -87,19 +84,41 @@
     </div>
     <!--Hero Section-->
     <section class="relative w-full h-screen mt-16">
-      <img
-        src="/Assets/hero-image.jpg"
-        alt="Hillside Haven"
-        class="w-full h-full object-cover"
-      />
-      <div
-        class="absolute bottom-10 left-5 md:top-1/3 md:left-20 text-[#001901] p-6 rounded-lg fade-in-up"
-      >
-        <h2 class="text-3xl md:text-7xl font-bold">
-          Your Hillside<br />Haven Awaits
-        </h2>
-      </div>
+        <img
+            src="/Assets/hero-image.jpg"
+            alt="Hillside Haven"
+            class="w-full h-full object-cover"
+        />
+        <div
+            class="absolute bottom-10 left-5 md:top-1/3 md:left-20 text-[#001901] p-6 rounded-lg fade-in-up"
+        >
+            <h2 class="text-3xl md:text-7xl font-bold">
+                Your Hillside<br />Haven Awaits
+            </h2>
+        </div>
+    
+        <!-- Floating Sidebar (Always on Top) -->
+        <div class="fixed h-fit md:top-1/2 md:right-0 md:-translate-y-1/2 flex flex-co md:space-y-0 z-50 
+                    bottom-0 right-0 w-full md:w-auto md:flex-col flex-row justify-around bg-white md:bg-transparent shadow-md md:shadow-none">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/YOUR_NUMBER" target="_blank" 
+               class="bg-green-700 p- flex items-center justify-center md:rounded-tl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
+                <img src="/Assets/Whatsapp.png" alt="WhatsApp" class="w-6 h-6">
+            </a>
+            <!-- Location -->
+            <a href="https://maps.google.com/?q=YOUR_LOCATION" target="_blank" 
+               class="bg-red-700 p- flex items-center justify-center md:r md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
+                <img src="/Assets/location.png" alt="Location" class="w-6 h-7">
+            </a>
+            <!-- Download -->
+            <a href="YOUR_FILE_LINK" download 
+               class="bg-blue-600 p- flex items-center justify-center md:rounded-bl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
+                <img src="/Assets/download.png" alt="Download" class="w-6 h-6">
+            </a>
+        </div>
     </section>
+    
+    
 
     <!--About us-->
     <section class="max-w-5xl mx-auto text-center py-12 px-4">
@@ -195,14 +214,14 @@
     </section>
 
     <!--Commercial-->
-    <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <section class="bg-gray-100 flex items-center justify-center min-h-fit ">
       <div class="w-full max-w-8xl overflow-hidden relative text-center">
         <!-- <div class="w-2/3 items-center"> -->
         <h3 class="text-gray-600 text-sm md:text-base">
           Life at Taradevi's Enclave
         </h3>
         <h1 class="text-xl md:text-3xl font-bold mt-1">Commercial</h1>
-        <p class="px-3 md:px-48 text-gray-500 mt-1">
+        <p class="px-3 md:px-96 text-gray-500 mt-1">
           Imagine yourself living at Taradevi's Enclave. Our gallery showcases
           the vibrant lifestyle and unparalleled beauty that define this
           exceptional community.
@@ -235,11 +254,9 @@
       <div class="w-full max-w-8xl overflow-hidden relative text-center">
         <!-- <div class="w-2/3 items-center"> -->
         <!-- <h3 class="text-gray-600 text-sm md:text-base">Life at Taradevi's Enclave</h3> -->
-        <h1 class="text-xl md:text-3xl font-bold mt-1">Commercial</h1>
-        <p class="px-3 md:px-48 text-gray-500 mt-1">
-          Imagine yourself living at Taradevi's Enclave. Our gallery showcases
-          the vibrant lifestyle and unparalleled beauty that define this
-          exceptional community.
+        <h1 class="text-xl md:text-3xl font-bold mt-1">Residential</h1>
+        <p class="px-3 md:px-96 text-gray-500 mt-1">
+            Imagine yourself living at Taradevi's Enclave.  Our gallery showcases the vibrant lifestyle and unparalleled beauty that define this exceptional community.
         </p>
         <!-- </div> -->
 
@@ -247,326 +264,95 @@
           class="gallery js-flickity mt-10"
           data-flickity-options='{ "wrapAround": true }'
         >
-          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
-          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
-          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
-          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
-          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
-          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
-          <img src="./Assets/hero-image.jpg" alt="img" class="gallery-cell" />
+          <img src="./Assets/residentialImages1.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/residentialImages2.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/residentialImages1.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/residentialImages2.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/residentialImages1.png" alt="img" class="gallery-cell" />
+          <img src="./Assets/residentialImages2.png" alt="img" class="gallery-cell" />
+          
         </div>
 
         <button
           class="mt-14 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800"
         >
-          Explore Commercial
+          Explore Residential
         </button>
       </div>
     </section>
 
     <!--Amenities-->
-    <section class="bg-gray-100 flex flex-col items-center justify-center p-6">
-      <!-- Title Section -->
-      <div class="text-center mb-6">
-        <h3 class="text-lg font-semibold text-gray-700">Exclusive Amenities</h3>
-        <h2 class="text-3xl font-bold text-gray-900">
-          The Privileges of Ownership
-        </h2>
-        <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
-          At Taradevi’s Enclave, we believe in providing an exceptional living
-          experience. Our thoughtfully curated amenities enhance your lifestyle
-          with relaxation, recreation, and convenience.
-        </p>
-      </div>
-
-      <!-- Carousel Wrapper -->
-      <div class="relative w-full max-w-5xl overflow-hidden">
-        <!-- Carousel Container -->
-        <div
-          id="amenities_carousel"
-          class="flex transition-transform duration-500 ease-in-out"
-          style="transform: translateX(0)"
-        >
-          <!-- Slide 1 -->
-          <div class="flex-shrink-0 w-full flex justify-around">
-            <div class="amenity-card">
-              <img
-                src="https://img.icons8.com/ios/100/4CAF50/gate-open.png"
-                class="h-12 mx-auto"
-              />
-              <p>Secure Gated Community</p>
-            </div>
-            <div class="amenity-card">
-              <img
-                src="https://img.icons8.com/ios/100/4CAF50/tree.png"
-                class="h-12 mx-auto"
-              />
-              <p>Landscape Garden</p>
-            </div>
-            <div class="amenity-card">
-              <img
-                src="https://img.icons8.com/ios/100/4CAF50/flash-on.png"
-                class="h-12 mx-auto"
-              />
-              <p>24/7 Power Backup</p>
-            </div>
-            <div class="amenity-card">
-              <img
-                src="https://img.icons8.com/ios/100/4CAF50/parking.png"
-                class="h-12 mx-auto"
-              />
-              <p>Private On-Site Parking</p>
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="flex-shrink-0 w-full flex justify-around">
-            <div class="amenity-card">
-              <img
-                src="https://img.icons8.com/ios/100/4CAF50/swimming.png"
-                class="h-12 mx-auto"
-              />
-              <p>Swimming Pool</p>
-            </div>
-            <div class="amenity-card">
-              <img
-                src="https://img.icons8.com/ios/100/4CAF50/gym.png"
-                class="h-12 mx-auto"
-              />
-              <p>Fully Equipped Gym</p>
-            </div>
-            <div class="amenity-card">
-              <img
-                src="https://img.icons8.com/ios/100/4CAF50/shield.png"
-                class="h-12 mx-auto"
-              />
-              <p>24/7 Security</p>
-            </div>
-            <div class="amenity-card">
-              <img
-                src="https://img.icons8.com/ios/100/4CAF50/bbq.png"
-                class="h-12 mx-auto"
-              />
-              <p>Barbecue Area</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Navigation Buttons -->
-        <button
-          id="prev_amenities"
-          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-l-md"
-        >
-          ‹
-        </button>
-        <button
-          id="next_amenities"
-          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-r-md"
-        >
-          ›
-        </button>
-      </div>
-    </section>
-
-    <!------------------------------>
-    <div class="slide-container swiper">
-      <div class="slide-content">
-        <div class="card-wrapper swiper-wrapper">
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
+    <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div class="w-full max-w-8xl overflow-hidden relative text-center">
+          <!-- <div class="w-2/3 items-center"> -->
+          <h3 class="text-gray-600 text-sm md:text-base">
+            Exclusive Amenities
+          </h3>
+          <h1 class="text-xl md:text-3xl font-bold mt-1">The Privileges of Ownership</h1>
+          <p class="px-3 md:px-48 text-gray-500 mt-1">
+            At Taradevi's Enclave, we believe in providing an exceptional living experience.  Our thoughtfully curated amenities are designed to enhance your lifestyle, offering everything you need for relaxation, recreation, and convenience.
+          </p>
+          <!-- </div> -->
+  
+          <div
+            class="gallery js-flickity mt-10"
+            data-flickity-options='{ "wrapAround": true }'
+          >
+            <img src="./Assets/carouselImage1.png" alt="img" class="gallery-cell2" />
+            <img src="./Assets/carouselImage1.png" alt="img" class="gallery-cell2" />
+            <img src="./Assets/carouselImage1.png" alt="img" class="gallery-cell2" />
             
-            <div class="card-content">
-                <h2 class="name">Mohamed Yousef</h2>
-                <p class="description">
-                  The lorem text the section that contains header with having open
-                  functionality. Lorem dolor sit amet consectetur adipisicing
-                  elit.
-                </p>
-  
-                <button class="button">View More</button>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-  
-                <div class="card-image">
-                  <img
-                    src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                    alt=""
-                    class="card-img"
-                  />
-                </div>
-              </div>
-
-         
-
-        </div>
-      </div>
-
-      <div class="swiper-button-next swiper-navBtn"></div>
-      <div class="swiper-button-prev swiper-navBtn"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <!--Location advantage-->
-    <section class="bg-gray-100 flex flex-col items-center justify-center p-5">
-      <div class="text-center mb-6">
-        <h3 class="text-lg font-semibold text-gray-700">Location Advantages</h3>
-        <h2 class="text-3xl font-bold text-gray-900">
-          Prime Location in Shimla
-        </h2>
-        <p class="text-gray-600 mt-2">
-          Discover the unparalleled advantages of Taradevi's Enclave's prime
-          location of New Shimla.
-        </p>
-      </div>
-
-      <!-- Image -->
-      <div class="w-full max-w-4xl flex justify-center">
-        <img
-          src="image.png"
-          alt="Location Map"
-          class="w-full rounded-lg shadow-lg"
-        />
-      </div>
-
-      <!-- Carousel Wrapper -->
-      <div class="relative w-full max-w-4xl mt-6 overflow-hidden">
-        <!-- Carousel Container -->
-        <div id="carousel" class="flex transition-transform duration-500">
-          <!-- Slide 1 -->
-          <div class="flex w-full shrink-0 justify-around">
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">5 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
-            </div>
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">5 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
-            </div>
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">5 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
-            </div>
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">5 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
-            </div>
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">5 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">📍 NH5/BCS</p>
-            </div>
           </div>
-          <!-- Slide 2 -->
-          <div class="flex w-full shrink-0 justify-around">
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">10 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">
-                📍 Mall Road
-              </p>
-            </div>
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">12 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">📍 ISBT</p>
-            </div>
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">15 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">
-                📍 Secretariat
-              </p>
-            </div>
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">18 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">
-                📍 SDA Complex
-              </p>
-            </div>
-            <div
-              class="w-36 h-20 bg-white shadow-lg text-center rounded-lg flex flex-col items-center justify-center"
-            >
-              <p class="text-green-600 font-bold">20 Minutes</p>
-              <p class="text-gray-500 flex items-center text-sm">📍 Kufri</p>
-            </div>
-          </div>
+  
+          <!-- <button
+            class="mt-14 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800"
+          >
+            Explore Commercial
+          </button> -->
         </div>
+      </section>
 
-        <!-- Navigation Buttons -->
-        <button
-          id="prev"
-          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-l-md"
-        >
-          ‹
-        </button>
-        <button
-          id="next"
-          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-r-md"
-        >
-          ›
-        </button>
-      </div>
 
-      <!--s -->
-      <div class="flex justify-center mt-4 space-x-2">
-        <span
-          class="dots w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
-        ></span>
-        <span
-          class="dots w-3 h-3 bg-green-500 rounded-full cursor-pointer"
-        ></span>
-      </div>
-    </section>
+    <!--------------------------------------->
+    
+    <!--Location Advantage-->
+    <section class="bg-gray-100 flex flex-col items-center justify-center p-5 min-h-screen md:mb-12">
+        <div class="w-full max-w-8xl overflow-hidden relative text-center ">
+          <div class="">
+          <h3 class="text-gray-600 text-sm md:text-base">
+            Exclusive Amenities
+          </h3>
+          <h1 class="text-xl md:text-3xl font-bold mt-1">The Privileges of Ownership</h1>
+          <p class="px-3 md:px-48 text-gray-500 mt-1">
+            At Taradevi's Enclave, we believe in providing an exceptional living experience.  Our thoughtfully curated amenities are designed to enhance your lifestyle, offering everything you need for relaxation, recreation, and convenience.
+          </p>
+          </div>
+            <!-- Image -->
+            <div class="w-full  flex justify-center mt-10">
+                <img
+                  src="./Assets/map.jpg"
+                  alt="Location Map"
+                  class="w-full max-w-4xl rounded-lg shadow-lg"
+                />
+              </div>
+
+  
+          <div
+            class="gallery js-flickity mt-10"
+            data-flickity-options='{ "wrapAround": true }'
+          >
+            <img src="./Assets/locationslide1.png" alt="img" class="gallery-cell3" />
+            <img src="./Assets/locationslide1.png" alt="img" class="gallery-cell3" />
+            
+          </div>
+  
+          <!-- <button
+            class="mt-14 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800"
+          >
+            Explore Commercial
+          </button> -->
+        </div>
+      </section>
 
     <!-- Contact us-->
     <section
@@ -655,7 +441,7 @@
 
             <button
               type="submit"
-              class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-semibold"
+              class="w-full bg-green-600 hover:bg-green-900 text-white py-2 rounded-lg font-semibold"
             >
               Get in Touch
             </button>
@@ -665,7 +451,7 @@
     </section>
 
     <!--Footer-->
-    <footer class="bg-green-900 text-white text-center py-4">
+    <footer class="bg-[#001901] text-white text-center py-4">
       <div
         class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm"
       >
@@ -686,47 +472,6 @@
         .addEventListener("click", function () {
           document.getElementById("mobile-menu").classList.toggle("hidden");
         });
-      const slider = document.getElementById("slider");
-      const dots = document.querySelectorAll(".dot");
-      let index = 0;
-      const totalSlides = slider.children.length;
-
-      function updateSlider() {
-        slider.style.transform = `translateX(-${index * 100}%)`;
-        dots.forEach((dot, i) =>
-          dot.classList.toggle("bg-green-500", i === index)
-        );
-      }
-
-      document.getElementById("next").addEventListener("click", () => {
-        index = (index + 1) % totalSlides;
-        updateSlider();
-      });
-
-      document.getElementById("prev").addEventListener("click", () => {
-        index = (index - 1 + totalSlides) % totalSlides;
-        updateSlider();
-      });
-
-      setInterval(() => {
-        index = (index + 1) % totalSlides;
-        updateSlider();
-      }, 3000);
-
-      let startX = 0;
-      slider.addEventListener("touchstart", (e) => {
-        startX = e.touches[0].clientX;
-      });
-
-      slider.addEventListener("touchend", (e) => {
-        let endX = e.changedTouches[0].clientX;
-        if (startX - endX > 50) {
-          index = (index + 1) % totalSlides;
-        } else if (endX - startX > 50) {
-          index = (index - 1 + totalSlides) % totalSlides;
-        }
-        updateSlider();
-      });
 
       //-----------------------------
       document
@@ -755,70 +500,8 @@
 
       //--------------------------------------
 
-      const carousel = document.getElementById("carousel");
-      const prev = document.getElementById("prev");
-      const next = document.getElementById("next");
-      const dot = document.querySelectorAll(".dots");
-      let currentIndex = 0;
-      const totalSlide = 2; // Since we have only 2 slides
-
-      function updateCarousel() {
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-        dot.forEach((dot, index) => {
-          dot.classList.toggle("bg-green-500", index === currentIndex);
-          dot.classList.toggle("bg-gray-300", index !== currentIndex);
-        });
-      }
-
-      next.addEventListener("click", () => {
-        if (currentIndex < totalSlide - 1) {
-          currentIndex++;
-          updateCarousel();
-        }
-      });
-
-      prev.addEventListener("click", () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-          updateCarousel();
-        }
-      });
-
-      dot.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-          currentIndex = index;
-          updateCarousel();
-        });
-      });
-
       //------------------------------------------
 
-      const amenitiesCarousel = document.getElementById("amenities_carousel");
-      const prevBtn = document.getElementById("prev_amenities");
-      const nextBtn = document.getElementById("next_amenities");
-
-      let currentSlideAmenities = 0;
-      const totalSlidesAmenities = 2; // Fixing the variable name
-
-      function updateAmenitiesCarousel() {
-        amenitiesCarousel.style.transform = `translateX(-${
-          currentSlideAmenities * 100
-        }%)`;
-      }
-
-      nextBtn.addEventListener("click", () => {
-        if (currentSlideAmenities < totalSlidesAmenities - 1) {
-          currentSlideAmenities++;
-          updateAmenitiesCarousel();
-        }
-      });
-
-      prevBtn.addEventListener("click", () => {
-        if (currentSlideAmenities > 0) {
-          currentSlideAmenities--;
-          updateAmenitiesCarousel();
-        }
-      });
     </script>
   </body>
 </html>
