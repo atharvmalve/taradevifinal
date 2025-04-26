@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="./Assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,7 +38,7 @@
     <!-- Logo and Title -->
     <div class="flex items-center space-x-3">
       <img src="/Assets/Logo.png" alt="Logo" class="h-8 md:h-8" />
-      <div>
+      <div onclick="redirecttoHome()" class="cursor-pointer">
         <h1 class="font-medium text-base leading-tight">Tara Devi’s Enclave</h1>
         <p class="text-sm md:text-sm opacity-50">Phase-1</p>
       </div>
@@ -184,6 +185,11 @@
           Developed by <span class="font-semibold">Apex Byte Innovations</span>
         </p>
     </footer>
+    <script>
+      function redirectToHome() {
+      window.location.href = "index.html";
+  }
+    </script>
     
 </body>
 </html>

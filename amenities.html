@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tara Devi's Enclave - Amenities</title>
+    <link rel="icon" href="./Assets/favicon.ico" type="image/x-icon">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -109,7 +110,7 @@
           <!-- Logo and Title -->
           <div class="flex items-center space-x-3">
             <img src="/Assets/Logo.png" alt="Logo" class="h-8 md:h-8" />
-            <div>
+            <div onclick="redirectToHome()" class="cursor-pointer">
               <h1 class="font-medium text-base leading-tight">Tara Devi’s Enclave</h1>
               <p class="text-sm md:text-sm opacity-50">Phase-1</p>
             </div>
@@ -151,162 +152,165 @@
     <main>
         <!-- Hero Section -->
         <section class="relative h-svh md:h-lvh overflow-hidden">
-            <img src="./Assets/commercialbackground.png" alt="Tara Devi's Enclave Pool Area" class="absolute inset-0 w-full h-full object-cover">
+            <img src="./Assets/amenities_heroimage.png" alt="Tara Devi's Enclave Pool Area" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                 <h2 class="text-white text-4xl md:text-6xl font-heading tracking-wider fade-in">AMENITIES</h2>
             </div>
         </section>
 
-        <!-- Banquet Hall Section 1 (Image left, text right) -->
+
+               <!-- Banquet Hall Section with Staggered Entrance Animation -->
+<section class="py-16 bg-gray-50 px-4">
+  <div class="container mx-auto max-w-7xl flex flex-col-reverse md:flex-row-reverse items-center gap-10 md:gap-16">
     
-        <section class="py-16 bg-gray-50 px-4">
-          
-          <div class="container mx-auto max-w-7xl flex flex-col-reverse md:flex-row-reverse items-center gap-10 md:gap-16">
-            
-           
-            
-            <!-- Text -->
-            <div class="w-full md:w-1/2 text-center md:text-left">
-              <h3 class="text-2xl md:text-3xl font-semibold mb-4">Landscaped gardens</h3>
-              <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                Be one with nature in our multiple gardens providing valley and jungle views from all angles.
-              </p>
-            </div>
-             <!-- Image -->
-             <div class="w-full md:w-1/2">
-              <img 
-                src="./Assets/2.png" 
-                alt="Event Setup at Banquet Hall" 
-                class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover"
-              />
-            </div>
-            
-        
-          </div>
-        </section>
-        <!-- Banquet Hall Section 2 (Text left, image right) -->
-        <section class="py-16 bg-gray-50 px-4">
-          <div class="container mx-auto max-w-7xl flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16">
-            
-            <!-- Image -->
-            <div class="w-full md:w-1/2">
-              <img 
-                src="./Assets/5.png" 
-                alt="Event Setup at Banquet Hall" 
-                class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover"
-              />
-            </div>
-            
-            <!-- Text -->
-            <div class="w-full md:w-1/2 text-center md:text-left">
-              <h3 class="text-2xl md:text-3xl font-semibold mb-4">Infinity Swimming pool</h3>
-              <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                A roof top infinity pool overlooking the entire valley providing the ultimate luxury experience
-              </p>
-            </div>
-        
-          </div>
-        </section>
+    <!-- Text -->
+    <div class="w-full md:w-1/2 text-center md:text-left opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll delay-200">
+      <h3 class="text-2xl md:text-3xl font-semibold mb-4">Landscaped gardens</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        Taradevi's Enclave Phase 7 brings luxury living to Shimla, a hill station famous for its verdant scenery, magnificent mountains, and cool misty mornings. The project, perched at 1600 meters above sea level, is located in New Shimla — the most premium location in the region.
+      </p>
+    </div>
 
-        <!-- Banquet Hall Section 1 (Image left, text right) -->
+    <!-- Image -->
+    <div class="w-full md:w-1/2 overflow-hidden rounded-lg opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll">
+      <img 
+        src="./Assets/2.png" 
+        alt="Event Setup at Banquet Hall" 
+        class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Banquet Hall Section with Staggered Entrance Animation -->
+<section class="py-16 bg-gray-50 px-4">
+  <div class="container mx-auto max-w-7xl flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16">
     
-        <section class="py-16 bg-gray-50 px-4">
+      <!-- Image -->
+      <div class="w-full md:w-1/2 overflow-hidden rounded-lg opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll">
+        <img 
+          src="./Assets/5.png" 
+          alt="Event Setup at Banquet Hall" 
+          class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
+        />
+      </div>
+
+    <!-- Text -->
+    <div class="w-full md:w-1/2 text-center md:text-left opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll delay-200">
+      <h3 class="text-2xl md:text-3xl font-semibold mb-4">Infinity Swimming pool</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        A roof top infinity pool overlooking the entire valley providing the ultimate luxury experience
+      </p>
+    </div>
+
+  
+
+  </div>
+</section>
+        
+          <!-- Banquet Hall Section with Staggered Entrance Animation -->
+<section class="py-16 bg-gray-50 px-4">
+  <div class="container mx-auto max-w-7xl flex flex-col-reverse md:flex-row-reverse items-center gap-10 md:gap-16">
+    
+    <!-- Text -->
+    <div class="w-full md:w-1/2 text-center md:text-left opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll delay-200">
+      <h3 class="text-2xl md:text-3xl font-semibold mb-4">Private-on-site parking</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        Drive in till your block with dedicated parking facility for all apartments, visitor parking separate
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="w-full md:w-1/2 overflow-hidden rounded-lg opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll">
+      <img 
+        src="./Assets/4.png" 
+        alt="Event Setup at Banquet Hall" 
+        class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
+      />
+    </div>
+
+  </div>
+</section>
+
+<!-- Banquet Hall Section with Staggered Entrance Animation -->
+<section class="py-16 bg-gray-50 px-4">
+  <div class="container mx-auto max-w-7xl flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16">
+    
+      <!-- Image -->
+      <div class="w-full md:w-1/2 overflow-hidden rounded-lg opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll">
+        <img 
+          src="./Assets/3.png" 
+          alt="Event Setup at Banquet Hall" 
+          class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
+        />
+      </div>
+
+    <!-- Text -->
+    <div class="w-full md:w-1/2 text-center md:text-left opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll delay-200">
+      <h3 class="text-2xl md:text-3xl font-semibold mb-4">Children’s play area</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        Providing safe and secure area for kids to let their hair down and enjoy.
+      </p>
+    </div>
+
+  
+
+  </div>
+</section>
+
+          <!-- Banquet Hall Section with Staggered Entrance Animation -->
+          <section class="py-16 bg-gray-50 px-4">
+            <div class="container mx-auto max-w-7xl flex flex-col-reverse md:flex-row-reverse items-center gap-10 md:gap-16">
+              
+              <!-- Text -->
+              <div class="w-full md:w-1/2 text-center md:text-left opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll delay-200">
+                <h3 class="text-2xl md:text-3xl font-semibold mb-4">Secured gated community</h3>
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                  All entries and exit monitored by security and access allowed only after confirming with you over intercom
+                </p>
+              </div>
           
-          <div class="container mx-auto max-w-7xl flex flex-col-reverse md:flex-row-reverse items-center gap-10 md:gap-16">
-            
-           
-            
-            <!-- Text -->
-            <div class="w-full md:w-1/2 text-center md:text-left">
-              <h3 class="text-2xl md:text-3xl font-semibold mb-4">Private-on-site parking </h3>
-              <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                Drive in till your block with dedicated parking facility for all apartments, visitor parking separate
-            </div>
-             <!-- Image -->
-             <div class="w-full md:w-1/2">
-              <img 
-                src="./Assets/4.png" 
-                alt="Event Setup at Banquet Hall" 
-                class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover"
-              />
-            </div>
-            
-        
-          </div>
-        </section>
-
-        <!-- Banquet Hall Section 2 (Text left, image right) -->
-        <section class="py-16 bg-gray-50 px-4">
-          <div class="container mx-auto max-w-7xl flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16">
-            
-            <!-- Image -->
-            <div class="w-full md:w-1/2">
-              <img 
-                src="./Assets/3.png" 
-                alt="Event Setup at Banquet Hall" 
-                class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover"
-              />
-            </div>
-            
-            <!-- Text -->
-            <div class="w-full md:w-1/2 text-center md:text-left">
-              <h3 class="text-2xl md:text-3xl font-semibold mb-4">Children’s play area</h3>
-              <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                A roof top infinity pool overlooking the entire valley providing the ultimate luxury experience
-              </p>
-            </div>
-        
-          </div>
-        </section>
-
-        <section class="py-16 bg-gray-50 px-4">
+              <!-- Image -->
+              <div class="w-full md:w-1/2 overflow-hidden rounded-lg opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll">
+                <img 
+                  src="./Assets/4.png" 
+                  alt="Event Setup at Banquet Hall" 
+                  class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
+                />
+              </div>
           
-          <div class="container mx-auto max-w-7xl flex flex-col-reverse md:flex-row-reverse items-center gap-10 md:gap-16">
-            
-           
-            
-            <!-- Text -->
-            <div class="w-full md:w-1/2 text-center md:text-left">
-              <h3 class="text-2xl md:text-3xl font-semibold mb-4">Secured gated community </h3>
-              <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                All entries and exit monitored by security and access allowed only after confirming with you over intercom
             </div>
-             <!-- Image -->
-             <div class="w-full md:w-1/2">
-              <img 
-                src="./Assets/1.png" 
-                alt="Event Setup at Banquet Hall" 
-                class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover"
-              />
-            </div>
-            
-        
-          </div>
-        </section>
+          </section>
 
-        <!-- Banquet Hall Section 2 (Text left, image right) -->
-        <section class="py-16 bg-gray-50 px-4">
-          <div class="container mx-auto max-w-7xl flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16">
-            
-            <!-- Image -->
-            <div class="w-full md:w-1/2">
-              <img 
-                src="./Assets/6.png" 
-                alt="Event Setup at Banquet Hall" 
-                class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover"
-              />
-            </div>
-            
-            <!-- Text -->
-            <div class="w-full md:w-1/2 text-center md:text-left">
-              <h3 class="text-2xl md:text-3xl font-semibold mb-4">Indoor games</h3>
-              <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                This place offers a range of offerings for kids and adults alike, place for you to socially bond with residents
-              </p>
-            </div>
-        
-          </div>
-        </section>
+          <!-- Banquet Hall Section with Staggered Entrance Animation -->
+<section class="py-16 bg-gray-50 px-4">
+  <div class="container mx-auto max-w-7xl flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16">
+    
+      <!-- Image -->
+      <div class="w-full md:w-1/2 overflow-hidden rounded-lg opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll">
+        <img 
+          src="./Assets/3.png" 
+          alt="Event Setup at Banquet Hall" 
+          class="w-full max-w-md mx-auto md:max-w-full rounded-lg object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
+        />
+      </div>
+
+    <!-- Text -->
+    <div class="w-full md:w-1/2 text-center md:text-left opacity-0 translate-y-6 transition-all duration-1000 ease-out animate-on-scroll delay-200">
+      <h3 class="text-2xl md:text-3xl font-semibold mb-4">Indoor games</h3>
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        This place offers a range of offerings for kids and adults alike, place for you to socially bond with residents
+      </p>
+    </div>
+
+  
+
+  </div>
+</section>
+
+
 
 
        
@@ -318,7 +322,7 @@
                     <p class="text-gray-600 mb-6">
                         If you are looking for 2,3,4 BHK apartment in Taradevi's Enclave, Phase 7, visit our property.
                     </p>
-                    <button class="bg-primary text-white py-3 px-6 rounded hover:bg-opacity-90 transition-colors font-medium inline-flex items-center">
+                    <button onclick="redirectToWhatsapp()" class="bg-primary text-white py-3 px-6 rounded hover:bg-opacity-90 transition-colors font-medium inline-flex items-center">
                         <span>Schedule A Visit</span>
                         <i class="fas fa-arrow-right ml-2"></i>
                     </button>
@@ -444,25 +448,56 @@
         </p>
       </footer>
 
-    <!-- Floating Sidebar (Always on Top) -->
-    <div class="fixed h-fit md:top-1/3 md:right-0 md:-translate-y-1/2 flex flex-co md:space-y-0 z-50 
-    bottom-0 right-0 w-full md:w-auto md:flex-col flex-row justify-around bg-white md:bg-transparent shadow-md md:shadow-none">
-<!-- WhatsApp -->
-<a href="https://wa.me/9871177761" target="_blank" 
-class="bg-green-700 p- flex items-center justify-center md:rounded-tl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
-<img src="/Assets/Whatsapp.png" alt="WhatsApp" class="w-6 h-6">
-</a>
-<!-- Location -->
-<a href="tel:9871177761" target="_blank" 
-class="bg-red-700 p- flex items-center justify-center md:r md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
-<img src="/Assets/telephone.png" alt="Location" class="w-5 h-5">
-</a>
-<!-- Download -->
-<a href="YOUR_FILE_LINK" download 
-class="bg-blue-600 p- flex items-center justify-center md:rounded-bl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
-<img src="/Assets/download.png" alt="Download" class="w-6 h-6">
-</a>
-</div>
+     <!-- Floating Sidebar (Always on Top) -->
+     <div class="fixed h-fit md:top-1/3 md:right-0 md:-translate-y-1/2 flex flex-co md:space-y-0 z-50 
+     bottom-0 right-0 w-full md:w-auto md:flex-col flex-row justify-around bg-white md:bg-transparent shadow-md md:shadow-none">
+ <!-- WhatsApp -->
+ <a href="https://wa.me/9871177761" target="_blank" 
+ class="bg-green-700 p- flex items-center justify-center md:rounded-tl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
+ <img src="/Assets/Whatsapp.png" alt="WhatsApp" class="w-6 h-6">
+ </a>
+ <!-- Location -->
+ <a href="tel:9871177761" target="_blank" 
+ class="bg-red-900 p- flex items-center justify-center md:r md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
+ <img src="/Assets/telephone.png" alt="Location" class="w-5 h-5">
+ </a>
+ <!-- Download -->
+ <!-- Download Button -->
+ <a id="open-modal" 
+ class="bg-blue-800 flex items-center justify-center md:rounded-bl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80 cursor-pointer">
+   <img src="/Assets/download.png" alt="Download" class="w-6 h-6">
+ </a>
+ 
+ </div>
+ <!-- Modal -->
+ <div id="download-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+   <div class="bg-white rounded-xl p-8 w-full max-w-md mx-4 md:mx-auto md:max-w-lg lg:max-w-xl shadow-lg relative">
+     
+     <h2 class="text-green-900 text-2xl md:text-3xl font-bold mb-6 text-center">
+       Download Brochure
+     </h2>
+     
+     <form id="download-form" class="flex flex-col gap-4">
+       <input type="text" id="name" name="name" placeholder="Name" required
+         class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-900" />
+       <input type="email" id="email" name="email" placeholder="Email" required
+         class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-900" />
+       <input type="tel" id="phone" name="phone" placeholder="Phone Number" required
+         class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-900" />
+ 
+       <button type="submit"
+         class="bg-green-900 text-white py-3 rounded-md hover:bg-green-800 hover:scale-105 active:scale-100 transition-all duration-300">
+         Submit & Download
+       </button>
+     </form>
+ 
+     <!-- Close Button -->
+     <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-green-900 text-3xl">
+       &times;
+     </button>
+ 
+   </div>
+ </div>
 
     <!-- JavaScript -->
     <script>
@@ -566,6 +601,70 @@ class="bg-blue-600 p- flex items-center justify-center md:rounded-bl-lg md:w-16 
     document.getElementById("menu-close").addEventListener("click", () => {
       document.getElementById("mobile-menu").classList.add("translate-x-full");
     });
+
+    function redirectToHome() {
+      window.location.href = "index.html";
+  }
+  
+  function redirectToWhatsapp() {
+      window.location.href = "https://wa.me/9871177761";
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+  });
+
+  const openModalBtn = document.getElementById('open-modal');
+const modalB = document.getElementById('download-modal');
+const closeModalBtn = document.getElementById('close-modal');
+const form = document.getElementById('download-form');
+
+// Open modal
+openModalBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  modalB.classList.remove('hidden');
+});
+
+// Close modal
+closeModalBtn.addEventListener('click', () => {
+  modalB.classList.add('hidden');
+});
+
+// Handle form submit
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // You can validate / send form data here using AJAX if needed
+  const name = form.name.value.trim();
+  const email = form.email.value.trim();
+  const phone = form.phone.value.trim();
+
+  if (name && email && phone) {
+    // Example: console.log({ name, email, phone });
+
+    // Close modal
+    modalB.classList.add('hidden');
+
+    // Trigger download
+    const link = document.createElement('a');
+    link.href = './Assets/Brochure.pdf'; // Put your real file URL here
+    link.download = 'TaraDeviEnclaveBrochure.pdf'; // Download filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+});
+
     </script>
 </body>
 </html>
