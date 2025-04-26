@@ -145,31 +145,37 @@
   <div class="pt-24 flex flex-col items-center gap-24 ">
 
     <!-- NAVBAR -->
-      <nav class="bg-[#001901] text-white  p-4 md:px-8 md:py-3 flex justify-between items-center fixed w-full top-0 z-50 shadow-lg text-lg md:text-xl">
-        <!-- Logo and Title -->
-        <div class="flex items-center space-x-3">
-          <img src="/Assets/Logo.png" alt="Logo" class="h-8 md:h-8" />
-          <div  class="cursor-pointer">
-            <h1 class="font-medium text-base leading-tight">Tara Devi’s Enclave</h1>
-            <p class="text-sm md:text-sm opacity-50">Phase-1</p>
-          </div>
-        </div>
+     
 
-        <!-- Desktop Nav Links -->
-        <div class="hidden lg:flex space-x-8 text-gray-400 font-normal text-base">
-          <a href="./index.html" class="nav-link">Home</a>
-          <a href="#aboutus" class="nav-link">About Us</a>
-          <a href="./commercial.html" class="nav-link">Commercial</a>
-          <a href="./residential.html" class="nav-link">Residential</a>
-          <a href="./amenities.html" class="nav-link">Amenities</a>
-          <a href="#contactus" class="nav-link">Contact Us</a>
-        </div>
-
-        <!-- Mobile Toggle -->
-        <div class="flex lg:hidden ">
-          <button id="menu-toggle" class="text-white text-xl focus:outline-none">☰</button>
-        </div>
-      </nav>
+       <nav class="bg-[#001901] text-white  p-4 md:px-8 md:py-3 flex justify-between items-center fixed w-full top-0 z-50 shadow-lg text-lg md:text-xl">
+         <!-- Logo and Title -->
+         <div class="flex items-center space-x-3">
+           <img src="/Assets/Logo.png" alt="Logo" class="h-8 md:h-8" />
+           <div  class="cursor-pointer">
+             <h1 class="font-medium text-base leading-tight">Tara Devi’s Enclave</h1>
+             <p class="text-sm md:text-sm opacity-50">Phase-1</p>
+           </div>
+         </div>
+ 
+         <!-- Desktop Nav Links -->
+         <div class="hidden lg:flex space-x-8 text-gray-400 font-normal text-base">
+           <a href="./index.html" class="nav-link">Home</a>
+           <a href="#aboutus" class="nav-link">About Us</a>
+           <a href="./commercial.html" class="nav-link">Commercial</a>
+           <a href="./residential.html" class="nav-link">Residential</a>
+           <a href="./amenities.html" class="nav-link">Amenities</a>
+           <a href="#contactus" class="nav-link">Contact Us</a>
+         </div>
+ 
+         <!-- Mobile Toggle -->
+         <div class="flex lg:hidden ">
+           <button id="menu-toggle" class="text-white text-xl focus:outline-none">☰</button>
+         </div>
+       </nav>
+       <!-- <div class="bg-green-800 w-full h-fit py-2">
+         <h1 class="text-white">Rera Number: HPRERASHI2023058P</h1>
+       </div> -->
+     
 
       <!-- MOBILE MENU -->
       <div
@@ -187,6 +193,7 @@
         <a href="./amenities.html" class="mobile-link">Amenities</a>
         <a href="#contactus" class="mobile-link">Contact Us</a>
       </div>
+      
       <!-- </div> -->
 
        <!--Hero Section-->
@@ -324,7 +331,7 @@
       </section>
 
       <!--Virtual Tour-->    
-      <section class="max-w-5xl w-full mx-auto px-4 md:px-8 py-10  text-center">
+      <section class="max-w-5xl w-full mx-auto px-4 md:px-8 py-10 text-center relative">
         <div class="space-y-2">
           <h3 class="text-gray-500 text-xs md:text-sm tracking-wide uppercase">Virtual Tours</h3>
           <h1 class="text-2xl md:text-3xl font-bold text-gray-800">
@@ -332,15 +339,21 @@
           </h1>
         </div>
       
-        <div class="mt-8">
-          <video class="w-full max-h-[480px] rounded-xl shadow-md object-cover" controls>
+        <div class="mt-8 relative">
+          <video id="virtualTourVideo" class="w-full max-h-[480px] rounded-xl shadow-md object-cover" controls>
             <source src="./Assets/AV Tara Devi’S.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+      
+          <!-- Close Button, hidden by default -->
+          <button id="closeFullscreenBtn" class="hidden absolute top-4 right-4 z-50 bg-red-600 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-red-700 transition-all">
+            ✕ Close
+          </button>
         </div>
       
         <div class="mt-8">
           <button
+            id="takeTourBtn"
             class="bg-green-900 text-white px-8 py-3 md:px-12 md:py-4 rounded-md text-base md:text-lg font-medium shadow-lg hover:bg-green-800 hover:scale-[1.03] active:scale-100 transition-all duration-300 ease-in-out"
           >
             Take Virtual Tour
@@ -747,7 +760,7 @@ class="bg-green-700 p- flex items-center justify-center md:rounded-tl-lg md:w-16
 </a>
 <!-- Location -->
 <a href="tel:9871177761" target="_blank" 
-class="bg-red-900 p- flex items-center justify-center md:r md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
+class="bg-gray-400 p- flex items-center justify-center md:r md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
 <img src="/Assets/telephone.png" alt="Location" class="w-5 h-5">
 </a>
 <!-- Download -->
@@ -1073,7 +1086,49 @@ form.addEventListener('submit', (e) => {
     document.body.removeChild(link);
   }
 });
+const video = document.getElementById('virtualTourVideo');
+  const takeTourBtn = document.getElementById('takeTourBtn');
+  const closeBtn = document.getElementById('closeFullscreenBtn');
 
+  takeTourBtn.addEventListener('click', async () => {
+    try {
+      if (video.requestFullscreen) {
+        await video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) { // Safari
+        await video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) { // IE11
+        await video.msRequestFullscreen();
+      }
+      video.play();
+      closeBtn.classList.remove('hidden');
+    } catch (error) {
+      console.error('Fullscreen error:', error);
+    }
+  });
+
+  closeBtn.addEventListener('click', async () => {
+    try {
+      if (document.exitFullscreen) {
+        await document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { // Safari
+        await document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { // IE11
+        await document.msExitFullscreen();
+      }
+      video.pause();
+      closeBtn.classList.add('hidden');
+    } catch (error) {
+      console.error('Exit fullscreen error:', error);
+    }
+  });
+
+  // Also auto-hide the close button if user exits fullscreen manually
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) {
+      closeBtn.classList.add('hidden');
+      video.pause();
+    }
+  });
  
     </script>
   </body>

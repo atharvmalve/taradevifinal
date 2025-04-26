@@ -237,9 +237,17 @@
             Experience luxury living and premium commercial spaces all in one place. Block A, B, and C offer spacious floor
             plans with modern amenities designed for comfortable living.
           </p>
-          <div class="bg-white shadow-lg rounded-lg max-w-4xl mx-auto">
-            <img src="./Assets/2bhk 1095-Recovered.png" alt="Block ABC"
-              class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <div class="shadow-lg rounded-lg">
+              <!-- <h3 class="text-center font-bold mb-2">Block A,B,C Site Plan</h3> -->
+              <img src="./Assets/2bhk 1095-Recovered.png" alt="Block A,B,C Site Plan"
+                class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+            </div>
+            <div class="shadow-lg rounded-lg">
+              <!-- <h3 class="text-center font-bold mb-2">Block A,B,C Exterior Image</h3> -->
+              <img src="./Assets/type abc.jpg" alt="Block D Type 2"
+                class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+            </div>
           </div>
         </div>
       
@@ -248,7 +256,7 @@
             Block D features our premium residential units with exclusive amenities and views. Each home is designed with
             attention to detail and comfort.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             <div class="shadow-lg rounded-lg">
               <h3 class="text-center font-bold mb-2">Block D Type-1</h3>
               <img src="./Assets/3bhk 1617-Recovered.png" alt="Block D Type 1"
@@ -264,6 +272,11 @@
               <img src="./Assets/2BHK 1144-Recovered-Recovered.png" alt="Block D Type 3"
                 class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
             </div>
+            <div class="shadow-lg rounded-lg">
+              <h3 class="text-center font-bold mb-2">Exterior Image</h3>
+              <img src="./Assets/type d.jpg" alt="Block D Type 3"
+                class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+            </div>
           </div>
         </div>
       
@@ -272,7 +285,7 @@
             Block E offers our most luxurious residences with panoramic views and premium finishes. These exclusive homes
             represent the pinnacle of luxury living at Tara Devi's Enclave.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <div class="shadow-lg rounded-lg">
               <h3 class="text-center font-bold mb-2">Block E Type-1</h3>
               <img src="./Assets/3bhk 1621-Recovered-Recovered.png" alt="Block E Type 1"
@@ -281,6 +294,11 @@
             <div class="shadow-lg rounded-lg">
               <h3 class="text-center font-bold mb-2">Block E Type-2</h3>
               <img src="./Assets/3BHK 1592.png" alt="Block E Type 2"
+                class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+            </div>
+            <div class="shadow-lg rounded-lg">
+              <h3 class="text-center font-bold mb-2">Exterior Image</h3>
+              <img src="./Assets/type e.jpg" alt="Block E Type 2"
                 class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
             </div>
           </div>
@@ -398,7 +416,7 @@ class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text
                 class="w-1/2 px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
               />
             </div>
-
+        
             <input
               type="email"
               id="email"
@@ -406,10 +424,8 @@ class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text
               required
               class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
             />
-
-            <div
-              class="flex items-center border bg-gray-800 rounded-lg px-4 py-4"
-            >
+        
+            <div class="flex items-center border bg-gray-800 rounded-lg px-4 py-4">
               <span class="mr-2 w-fit">🇮🇳 +91</span>
               <input
                 type="tel"
@@ -419,14 +435,14 @@ class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text
                 class="w-fit bg-transparent text-white focus:outline-none"
               />
             </div>
-
+        
             <textarea
               id="message"
               placeholder="Inquiry"
               rows="4"
               class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
             ></textarea>
-
+        
             <button
               type="submit"
               class="w-full bg-green-600 hover:bg-green-900 text-white py-2 rounded-lg font-semibold"
@@ -487,7 +503,7 @@ class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text
      <form id="download-form" class="flex flex-col gap-4">
        <input type="text" id="name" name="name" placeholder="Name" required
          class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-900" />
-       <input type="email" id="email" name="email" placeholder="Email" required
+       <input type="email" id="emailId" name="email" placeholder="Email" required
          class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-900" />
        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required
          class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-900" />
@@ -508,10 +524,99 @@ class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text
 
     <!-- JavaScript -->
     <script>
-
+   
 
 
         document.addEventListener('DOMContentLoaded', function() {
+
+          const contactForm = document.getElementById('contactForm');
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone=document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    const data = {
+      firstName,
+      lastName,
+      email,
+      phone,
+      inquiry: message, // mapped from textarea
+    };
+
+    try {
+      const response = await fetch('https://sheetdb.io/api/v1/2k8pkbwy90imv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer 25lr29km6omncb5me2kc0y78spie9wzdagbcd9n6',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert('Your message has been sent successfully!');
+        contactForm.reset();
+      } else {
+        alert('There was an error sending your message.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An unexpected error occurred.');
+    }
+  });
+
+  const downloadForm = document.getElementById('download-form');
+
+  downloadForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const firstName = document.getElementById('name').value.split(" ")[0].trim();
+    if(document.getElementById('name').value.split(" ").length>1){
+      const lastName = document.getElementById('name').value.split(" ")[1].trim();
+    }
+    
+    console.log(lastName)
+    const email = document.getElementById('emailId').value.trim();
+    console.log(email);
+    const phone=document.getElementById('phone').value.trim();
+    const inquiry = "Brochure Downloaded!";
+
+    const data = {
+      firstName,
+      lastName,
+      email,
+      phone,
+      inquiry
+   // mapped from textarea
+    };
+
+    try {
+      const response = await fetch('https://sheetdb.io/api/v1/2k8pkbwy90imv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer 25lr29km6omncb5me2kc0y78spie9wzdagbcd9n6',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert('Brochure Downloaded!');
+        downloadForm.reset();
+      } else {
+        alert('Error while downloading the brochure');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An unexpected error occurred.');
+    }
+  });
+                
             const toggle = document.getElementById('menu-toggle');
   const close = document.getElementById('menu-close');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -636,31 +741,7 @@ class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text
                 }
             }
             
-            // Contact form submission
-            const contactForm = document.getElementById('contactForm');
-            
-            contactForm.addEventListener('submit', function(event) {
-                event.preventDefault();
                 
-                // Collect form data
-                const formData = {
-                    firstName: document.getElementById('firstName').value,
-                    lastName: document.getElementById('lastName').value,
-                    email: document.getElementById('email').value,
-                    phone: document.getElementById('countryCode').value + document.getElementById('phone').value,
-                    inquiry: document.getElementById('inquiry').value
-                };
-                
-                // Here you would typically send this data to a server
-                console.log('Form submitted with data:', formData);
-                
-                // Show success message (in a real app, you'd wait for API response)
-                alert('Thank you for your inquiry! We will contact you within 24 hours.');
-                
-                // Reset form
-                contactForm.reset();
-            });
-            
             // Scroll animations
             const observerOptions = {
                 root: null,
@@ -814,7 +895,7 @@ form.addEventListener('submit', (e) => {
 
     // Trigger download
     const link = document.createElement('a');
-    link.href = './Assets/Brochure.pdf'; // Put your real file URL here
+    link.href = './Assets/'; // Put your real file URL here
     link.download = 'TaraDeviEnclaveBrochure.pdf'; // Download filename
     document.body.appendChild(link);
     link.click();
