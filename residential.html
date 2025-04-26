@@ -74,22 +74,27 @@
         }
         
         .carousel-container {
-            position: relative;
-            overflow: hidden;
+          overflow: hidden;
+          width: 100%;
+          position: relative;
         }
-        
+
         .carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease;
+          display: flex;
+          transition: transform 0.5s ease-in-out;
+          width: 100%;
         }
-        
+
         .carousel-item {
-            flex: 0 0 100%;
-            height: 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          height: 20rem; /* or whatever height you want */
+          object-fit: cover;
+          border-radius: 0.5rem; /* match your rounded-lg */
         }
-        
+
         .carousel-indicator.active {
-            background-color: #134727;
+          background-color: #1a4d2e; /* active dot color if you have indicators */
         }
         
         .fade-in {
@@ -117,7 +122,7 @@
         }
         
         /* Custom scrollbar */
-        ::-webkit-scrollbar {
+        /* ::-webkit-scrollbar {
             width: 8px;
         }
         
@@ -132,7 +137,7 @@
         
         ::-webkit-scrollbar-thumb:hover {
             background: #0d3017;
-        }
+        } */
         
         /* For touch-based carousel swiping */
         .carousel-container {
@@ -151,21 +156,21 @@
 <body class="font bg-gray-50">
     <!-- Header -->
     <header>
-       <!-- NAVBAR -->
-       <nav class="bg-[#001901] text-white  p-4 md:px-8 md:py-5 flex justify-between items-center fixed w-full top-0 z-50 shadow-lg text-lg md:text-xl">
+        <!-- NAVBAR -->
+      <nav class="bg-[#001901] text-white  p-4 md:px-8 md:py-3 flex justify-between items-center fixed w-full top-0 z-50 shadow-lg text-lg md:text-xl">
         <!-- Logo and Title -->
-        <div class="flex items-center space-x-4">
-          <img src="/Assets/Logo.png" alt="Logo" class="h-8 md:h-10" />
+        <div class="flex items-center space-x-3">
+          <img src="/Assets/Logo.png" alt="Logo" class="h-8 md:h-8" />
           <div>
-            <h1 class="font-semibold leading-tight">Tara Devi’s Enclave</h1>
-            <p class="text-sm md:text-base opacity-80">Phase-1</p>
+            <h1 class="font-medium text-base leading-tight">Tara Devi’s Enclave</h1>
+            <p class="text-sm md:text-sm opacity-50">Phase-1</p>
           </div>
         </div>
 
         <!-- Desktop Nav Links -->
-        <div class="hidden md:flex space-x-8 text-gray-400 font-normal">
+        <div class="hidden lg:flex space-x-8 text-gray-400 font-normal text-base">
           <a href="./index.html" class="nav-link">Home</a>
-          <a href="#aboutus" class="nav-link">About Us</a>
+          <a href="index.html#aboutus" class="nav-link">About Us</a>
           <a href="./commercial.html" class="nav-link">Commercial</a>
           <a href="./residential.html" class="nav-link">Residential</a>
           <a href="./amenities.html" class="nav-link">Amenities</a>
@@ -173,7 +178,7 @@
         </div>
 
         <!-- Mobile Toggle -->
-        <div class="flex md:hidden ">
+        <div class="flex lg:hidden ">
           <button id="menu-toggle" class="text-white text-xl focus:outline-none">☰</button>
         </div>
       </nav>
@@ -181,14 +186,14 @@
       <!-- MOBILE MENU -->
       <div
         id="mobile-menu"
-        class="fixed inset-0 bg-[#001901] text-white p-6 z-40 flex flex-col space-y-6 transform translate-x-full transition-transform duration-300 md:hidden"
+        class="fixed inset-0 bg-[#001901] text-white p-6 z-40 flex flex-col space-y-6 transform translate-x-full transition-transform duration-300 lg:hidden"
       >
         <!-- Close Button -->
         <div class="flex justify-end">
           <button id="menu-close" class="text-white text-3xl">✕</button>
         </div>
         <a href="./index.html" class="mobile-link">Home</a>
-        <a href="#aboutus" class="mobile-link">About Us</a>
+        <a href="index.html#aboutus" class="mobile-link">About Us</a>
         <a href="./commercial.html" class="mobile-link">Commercial</a>
         <a href="./residential.html" class="mobile-link">Residential</a>
         <a href="./amenities.html" class="mobile-link">Amenities</a>
@@ -206,76 +211,87 @@
           </div>
       </section>
 
-        <!-- Tabbed Floor Plans Section -->
-        <section class="container mx-auto px-4 py-8">
-            <!-- Tabs navigation -->
-            <div class="flex flex-wrap justify-center border-b mb-6">
-                <button class="tab-btn tab-active px-6 py-3 text-lg focus:outline-none" data-tab="site-plan">Site Plan</button>
-                <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-abc">Block A,B,C</button>
-                <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-d">Block D</button>
-                <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-e">Block E</button>
+      <section class="container mx-auto px-4 py-8">
+        <!-- Tabs navigation -->
+        <div class="flex flex-wrap justify-center border-b mb-6">
+          <button class="tab-btn tab-active px-6 py-3 text-lg focus:outline-none" data-tab="site-plan">Site Plan</button>
+          <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-abc">Block A,B,C</button>
+          <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-d">Block D</button>
+          <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-e">Block E</button>
+        </div>
+      
+        <!-- Tab content -->
+        <div class="tab-content active" id="site-plan">
+          <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
+            Experience luxury living and premium commercial spaces all in one place. Discover a vibrant community where residents enjoy top-notch amenities and businesses thrive in a bustling commercial hub.
+          </p>
+          <div class="bg-white shadow-lg rounded-lg p-4 max-w-4xl mx-auto">
+            <img src="./Assets/site plan.jpg" alt="Site Plan"
+              class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+          </div>
+        </div>
+      
+        <div class="tab-content" id="block-abc">
+          <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
+            Experience luxury living and premium commercial spaces all in one place. Block A, B, and C offer spacious floor
+            plans with modern amenities designed for comfortable living.
+          </p>
+          <div class="bg-white shadow-lg rounded-lg max-w-4xl mx-auto">
+            <img src="./Assets/2bhk 1095-Recovered.png" alt="Block ABC"
+              class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+          </div>
+        </div>
+      
+        <div class="tab-content" id="block-d">
+          <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
+            Block D features our premium residential units with exclusive amenities and views. Each home is designed with
+            attention to detail and comfort.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <div class="shadow-lg rounded-lg">
+              <h3 class="text-center font-bold mb-2">Block D Type-1</h3>
+              <img src="./Assets/3bhk 1617-Recovered.png" alt="Block D Type 1"
+                class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
             </div>
-            
-            <!-- Tab content -->
-            <div class="tab-content active" id="site-plan">
-                <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
-                    Experience luxury living and premium commercial spaces all in one place. Discover a vibrant community where residents enjoy top-notch amenities and businesses thrive in a bustling commercial hub.
-                </p>
-                <div class="bg-white shadow-lg rounded-lg p-4 max-w-4xl mx-auto">
-                    <img src="./Assets/site plan.jpg" alt="Site Plan" class="w-full h-auto rounded">
-                </div>
+            <div class="shadow-lg rounded-lg">
+              <h3 class="text-center font-bold mb-2">Block D Type-2</h3>
+              <img src="./Assets/3bhk1557-Recovered-Recovered.png" alt="Block D Type 2"
+                class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
             </div>
-            
-            <div class="tab-content" id="block-abc">
-                <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
-                    Experience luxury living and premium commercial spaces all in one place. Block A, B, and C offer spacious floor plans with modern amenities designed for comfortable living.
-                </p>
-                <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto"> -->
-                  <div class="bg-whie shadow-lg rounded-lg  max-w-4xl mx-auto">
-                    <img src="./Assets/2bhk 1095-Recovered.png" alt="Site Plan" class="w-full h-auto rounded">
-                </div>
-                <!-- </div> -->
+            <div class="shadow-lg rounded-lg">
+              <h3 class="text-center font-bold mb-2">Block D Type-3</h3>
+              <img src="./Assets/2BHK 1144-Recovered-Recovered.png" alt="Block D Type 3"
+                class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
             </div>
-            
-            <div class="tab-content" id="block-d">
-                <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
-                    Block D features our premium residential units with exclusive amenities and views. Each home is designed with attention to detail and comfort.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                <div class=" shadow-lg rounded-lg  max-w-4xl mx-auto">
-                    <h3 class="text-center font-bold mb-2">Block D Type-1</h3>
-                    <img src="./Assets/3bhk 1617-Recovered.png" alt="Block D Floor Plan" class="w-full h-auto rounded">
-                </div>
-                <div class=" shadow-lg rounded-lg  max-w-4xl mx-auto">
-                  <h3 class="text-center font-bold mb-2">Block D Type-2</h3>
-                  <img src="./Assets/3bhk1557-Recovered-Recovered.png" alt="Block D Floor Plan" class="w-full h-auto rounded">
-              </div>
-              <div class=" shadow-lg rounded-lg  max-w-4xl mx-auto">
-                <h3 class="text-center font-bold mb-2">Block D Type-3</h3>
-                <img src="./Assets/2BHK 1144-Recovered-Recovered.png" alt="Block D Floor Plan" class="w-full h-auto rounded">
+          </div>
+        </div>
+      
+        <div class="tab-content" id="block-e">
+          <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
+            Block E offers our most luxurious residences with panoramic views and premium finishes. These exclusive homes
+            represent the pinnacle of luxury living at Tara Devi's Enclave.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <div class="shadow-lg rounded-lg">
+              <h3 class="text-center font-bold mb-2">Block E Type-1</h3>
+              <img src="./Assets/3bhk 1621-Recovered-Recovered.png" alt="Block E Type 1"
+                class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
             </div>
-                
-                </div>
+            <div class="shadow-lg rounded-lg">
+              <h3 class="text-center font-bold mb-2">Block E Type-2</h3>
+              <img src="./Assets/3BHK 1592.png" alt="Block E Type 2"
+                class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
             </div>
-            
-            <div class="tab-content" id="block-e">
-                <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
-                    Block E offers our most luxurious residences with panoramic views and premium finishes. These exclusive homes represent the pinnacle of luxury living at Tara Devi's Enclave.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                  <div class=" shadow-lg rounded-lg  max-w-4xl mx-auto">
-                      <h3 class="text-center font-bold mb-2">Block E Type-1</h3>
-                      <img src="./Assets/3bhk 1621-Recovered-Recovered.png" alt="Block D Floor Plan" class="w-full h-auto rounded">
-                  </div>
-                  <div class=" shadow-lg rounded-lg  max-w-4xl mx-auto">
-                    <h3 class="text-center font-bold mb-2">Block E Type-2</h3>
-                    <img src="./Assets/3BHK 1592.png" alt="Block D Floor Plan" class="w-full h-auto rounded">
-                </div>
-                
-                  
-                  </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Fullscreen Modal -->
+      <div id="image-modal"
+        class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+        <img id="modal-image" src="" class="max-w-full max-h-full object-contain rounded">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+      </div>
 
         <!-- Estate Experience Section with Carousel -->
         <section class="flex items-center justify-center my-20">
@@ -293,19 +309,28 @@
                 <img src="./Assets/ir1.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
                 <img src="./Assets/ir2.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
                 <img src="./Assets/ir3.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-                <img src="./Assets/ir4.jpeg" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
+                <!-- <img src="./Assets/ir4.jpeg" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" /> -->
                 <img src="./Assets/ir5.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
                 <img src="./Assets/ir6.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
                 <img src="./Assets/ir7.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
               </div>
         
               <!-- Navigation Arrows -->
-              <button id="prev" class="absolute top-1/2 left-0 -translate-y-1/2 bg-white text-green-900 p-3 rounded-full hover:bg-gray-200">
-                &#10094;
-              </button>
-              <button id="next" class="absolute top-1/2 right-0 -translate-y-1/2 bg-white text-green-900 p-3 rounded-full hover:bg-gray-200">
-                &#10095;
-              </button>
+               <!-- Prev Button -->
+<button id="prev" 
+class="absolute top-1/2 left-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text-white p-3 md:p-3 rounded-full hover:bg-green-800 hover:bg-opacity-70 shadow-md">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5 md:w-6 md:h-6">
+  <path fill-rule="evenodd" d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+</svg>
+</button>
+
+<!-- Next Button -->
+<button id="next" 
+class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text-white p-3 md:p-3 rounded-full hover:bg-green-800 hover:bg-opacity-70 shadow-md">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5 md:w-6 md:h-6">
+  <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 0 0 1.06l2.47 2.47H3a.75.75 0 0 0 0 1.5h16.19l-2.47 2.47a.75.75 0 1 0 1.06 1.06l3.75-3.75a.75.75 0 0 0 0-1.06l-3.75-3.75a.75.75 0 0 0-1.06 0Z" clip-rule="evenodd" />
+</svg>
+</button>
             </div>
         
             <!-- <button onclick="redirectToResidential()" class="mt-14 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800">
@@ -317,6 +342,7 @@
         <!-- Contact Section -->
        <!-- Contact us-->
       <section
+      id="contactus"
       class="relative w-full h-full bg-cover bg-center"
       style="background-image: url('./Assets/Formbackground.jpg')"
     >
@@ -381,15 +407,15 @@
             />
 
             <div
-              class="flex items-center border bg-gray-800 rounded-lg px-4 py-2"
+              class="flex items-center border bg-gray-800 rounded-lg px-4 py-4"
             >
-              <span class="mr-2">🇮🇳 +91</span>
+              <span class="mr-2 w-fit">🇮🇳 +91</span>
               <input
                 type="tel"
                 id="phone"
                 placeholder="Phone Number*"
                 required
-                class="w-full bg-transparent text-white focus:outline-none"
+                class="w-fit bg-transparent text-white focus:outline-none"
               />
             </div>
 
@@ -432,14 +458,14 @@
     <div class="fixed h-fit md:top-1/3 md:right-0 md:-translate-y-1/2 flex flex-co md:space-y-0 z-50 
     bottom-0 right-0 w-full md:w-auto md:flex-col flex-row justify-around bg-white md:bg-transparent shadow-md md:shadow-none">
 <!-- WhatsApp -->
-<a href="https://wa.me/YOUR_NUMBER" target="_blank" 
+<a href="https://wa.me/9871177761" target="_blank" 
 class="bg-green-700 p- flex items-center justify-center md:rounded-tl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
 <img src="/Assets/Whatsapp.png" alt="WhatsApp" class="w-6 h-6">
 </a>
 <!-- Location -->
-<a href="https://maps.google.com/?q=YOUR_LOCATION" target="_blank" 
+<a href="tel:9871177761" target="_blank" 
 class="bg-red-700 p- flex items-center justify-center md:r md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
-<img src="/Assets/telephone.png" alt="Location" class="w-6 h-6">
+<img src="/Assets/telephone.png" alt="Location" class="w-5 h-5">
 </a>
 <!-- Download -->
 <a href="YOUR_FILE_LINK" download 
@@ -682,6 +708,44 @@ class="bg-blue-600 p- flex items-center justify-center md:rounded-bl-lg md:w-16 
     cardWidth = updateCardWidth();
     carousel.scrollTo({ left: 0, behavior: 'smooth' });
   });
+  // Modal Functionality
+  const modal = document.getElementById('image-modal');
+  const modalImage = document.getElementById('modal-image');
+  const galleryImages = document.querySelectorAll('.gallery-image');
+
+  galleryImages.forEach((img) => {
+    img.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      modalImage.src = img.src;
+    });
+  });
+
+  function closeModal() {
+    modal.classList.add('hidden');
+    modalImage.src = '';
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // Tab Switching Logic
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => b.classList.remove('tab-active'));
+      btn.classList.add('tab-active');
+
+      const tabId = btn.getAttribute('data-tab');
+      tabContents.forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.id === tabId) tab.classList.add('active');
+      });
+    });
+  });
+
 
     </script>
 </body>
