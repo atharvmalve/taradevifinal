@@ -155,7 +155,7 @@
         </div>
 
         <!-- Desktop Nav Links -->
-        <div class="hidden md:flex space-x-8 text-gray-400 font-normal text-base">
+        <div class="hidden lg:flex space-x-8 text-gray-400 font-normal text-base">
           <a href="./index.html" class="nav-link">Home</a>
           <a href="#aboutus" class="nav-link">About Us</a>
           <a href="./commercial.html" class="nav-link">Commercial</a>
@@ -165,7 +165,7 @@
         </div>
 
         <!-- Mobile Toggle -->
-        <div class="flex md:hidden ">
+        <div class="flex lg:hidden ">
           <button id="menu-toggle" class="text-white text-xl focus:outline-none">☰</button>
         </div>
       </nav>
@@ -173,7 +173,7 @@
       <!-- MOBILE MENU -->
       <div
         id="mobile-menu"
-        class="fixed inset-0 bg-[#001901] text-white p-6 z-40 flex flex-col space-y-6 transform translate-x-full transition-transform duration-300 md:hidden"
+        class="fixed inset-0 bg-[#001901] text-white p-6 z-40 flex flex-col space-y-6 transform translate-x-full transition-transform duration-300 lg:hidden"
       >
         <!-- Close Button -->
         <div class="flex justify-end">
@@ -189,7 +189,7 @@
       <!-- </div> -->
 
        <!--Hero Section-->
-       <section class="relative w-full h-[60vh] md:h-screen -mt-10 md:-mt-20 z-10 bg-black">
+       <section class="relative w-full h-[80vh] md:h-screen -mt-10 md:-mt-20 z-10 bg-black">
         <img
             src="/Assets/hero-image.jpg"
             alt="Hillside Haven"
@@ -212,10 +212,11 @@
                 <img src="/Assets/Whatsapp.png" alt="WhatsApp" class="w-6 h-6">
             </a>
             <!-- Location -->
-            <a href="https://wa.me/9871177761" target="_blank" 
-               class="bg-red-700 p- flex items-center justify-center md:r md:w-14 md:h-14 w-full h-14 shadow-md hover:opacity-80">
-                <img src="/Assets/telephone.png" alt="Location" class="w-5 h-5">
+            <a href="tel:9871177761" 
+              class="bg-red-700 p- flex items-center justify-center md:r md:w-14 md:h-14 w-full h-14 shadow-md hover:opacity-80">
+                <img src="/Assets/telephone.png" alt="Call" class="w-5 h-5">
             </a>
+
             <!-- Download -->
             <a href="YOUR_FILE_LINK" download 
                class="bg-blue-600 p- flex items-center justify-center md:rounded-bl-lg md:w-14 md:h-14 w-full h-14 shadow-md hover:opacity-80">
@@ -224,8 +225,8 @@
         </div>
 
         <!-- Box Grid -->
-        <div class="flex justify-center w-full md:w-full  py-4 md:py-12 -mt-28 md:-mt-28">
-          <div class="w-11/12 md:w-5/6 xl:w-2/3 bg-white border border-gray-300 rounded-2xl flex flex-col md:flex-row overflow-hidden">
+        <div class="flex justify-center w-full md:w-full  py-4 md:py-12 -mt-52 md:-mt-28">
+          <div class="w-[95%] lg:w-5/6 xl:w-2/3 bg-white border border-gray-300 rounded-2xl flex flex-col md:flex-row overflow-hidden">
         
             <!-- Item 1 -->
             <div class="flex flex-col justify-center items-center flex-1 p-4 md:p-6">
@@ -281,7 +282,7 @@
       
   
       <!--About Us-->
-      <section class="max-w-5xl mx-auto text-center  px-4 mt-6 md:mt-0">
+      <section class="max-w-5xl mx-auto text-center  px-4 mt-32 md:mt-0">
         <h3 class="text-gray-700 uppercase tracking-widest text-xs md:text-sm">About Us</h3>
         <h2 class=" text-2xl md:text-3xl font-bold text-gray-900 mt-2">
           Introducing Taradevi's Enclave
@@ -302,24 +303,41 @@
          </div>
   
         <!-- Second Row of Boxes -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6 items-center">
-          <div
-            class="bg-gray-200 text-gray-800 py-3 px-2 rounded-lg text-sm md:text-base font-semibold"
-          >
-          <span class="text-green-700">30% </span>Area assigned to Residential buildings
-          </div>
-          <div
-            class="bg-gray-200 text-gray-800 py-3 px-4 rounded-lg text-sm md:text-base font-semibold"
-          >
-          <span class="text-green-700">108 </span>Residential Units + Commercial Plaza
-          </div>
-          <div
-            class="bg-gray-200 text-gray-800 py-3 px-4 w-full rounded-lg text-sm md:text-base font-semibold"
-          >
-          Luxury <span class="text-green-700"> 2/3/4 </span> BHK Homes starting at 98Lacs*
-          </div>
+        <div class="w-[94%] md:w-11/12 xl:w-4/5 mx-auto mt-10 grid grid-cols-1 md:grid-cols-6 gap-3 md:gap-6 items-center text-center">
 
+          <!-- Box 1 -->
+          <div class="flex flex-col items-center bg-white md:bg-transparent p-4 md:p-0 rounded-xl shadow md:shadow-none border md:border-none">
+            <h2 class="text-green-900 text-4xl md:text-5xl font-bold">30%</h2>
+            <p class="text-gray-700 text-[12px] md:text-sm mt-1">Area assigned to Residential buildings zone allocation</p>
+          </div>
+        
+          <!-- Divider 1 -->
+          <div class="hidden md:flex justify-center">
+            <div class="w-px h-10 bg-gray-300 rotate-12"></div>
+          </div>
+        
+          <!-- Box 2 -->
+          <div class="flex flex-col items-center bg-white md:bg-transparent p-4 md:p-0 rounded-xl shadow md:shadow-none border md:border-none">
+            <h2 class="text-green-900 text-4xl md:text-5xl font-bold">108</h2>
+            <p class="text-gray-700 text-[12px] md:text-sm mt-1">Residential Units + Commercial Plaza</p>
+          </div>
+        
+          <!-- Divider 2 -->
+          <div class="hidden md:flex justify-center">
+            <div class="w-px h-10 bg-gray-300 rotate-12"></div>
+          </div>
+        
+          <!-- Box 3 -->
+          <div class="flex flex-col items-center bg-white md:bg-transparent p-4 md:p-0 rounded-xl shadow md:shadow-none border md:border-none md:col-span-2">
+            <h2 class="text-green-900 text-4xl md:text-5xl font-bold">2/3/4 BHK</h2>
+            <p class="text-gray-700 text-[12px] md:text-sm mt-1">Luxury Homes starting at ₹98 Lacs*</p>
+          </div>
+        
         </div>
+        
+        
+        
+        
       </section>
 
       <!--Virtual Tour-->    
@@ -356,7 +374,7 @@
             Life at Taradevi's Enclave
           </h3>
           <h1 class="text-xl md:text-3xl font-bold mt-1">Residential</h1>
-          <p class="px-4 md:px-80 text-gray-500 mt-1">
+          <p class="px-4 md:px-80 text-gray-500 mt-4">
             Tara Devi’s Enclave is located amid Himuda developed sectors of New Shimla, the most organized part of the city and is surrounded by lush green deodar forests and a water stream, which form its natural boundary.
           </p>
       
@@ -365,19 +383,30 @@
               <img src="./Assets/ir1.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
               <img src="./Assets/ir2.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
               <img src="./Assets/ir3.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-              <img src="./Assets/ir4.jpeg" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
+              <!-- <img src="./Assets/ir4.jpeg" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" /> -->
               <img src="./Assets/ir5.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
               <img src="./Assets/ir6.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
               <img src="./Assets/ir7.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
             </div>
       
             <!-- Navigation Arrows -->
-            <button id="prev" class="absolute top-1/2 left-0 -translate-y-1/2 bg-white text-green-900 p-3 rounded-full hover:bg-gray-200">
-              &#10094;
-            </button>
-            <button id="next" class="absolute top-1/2 right-0 -translate-y-1/2 bg-white text-green-900 p-3 rounded-full hover:bg-gray-200">
-              &#10095;
-            </button>
+         <!-- Prev Button -->
+<button id="prev" 
+  class="absolute top-1/2 left-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text-white p-3 md:p-3 rounded-full hover:bg-green-800 hover:bg-opacity-70 shadow-md">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5 md:w-6 md:h-6">
+    <path fill-rule="evenodd" d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+  </svg>
+</button>
+
+<!-- Next Button -->
+<button id="next" 
+  class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text-white p-3 md:p-3 rounded-full hover:bg-green-800 hover:bg-opacity-70 shadow-md">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5 md:w-6 md:h-6">
+    <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 0 0 1.06l2.47 2.47H3a.75.75 0 0 0 0 1.5h16.19l-2.47 2.47a.75.75 0 1 0 1.06 1.06l3.75-3.75a.75.75 0 0 0 0-1.06l-3.75-3.75a.75.75 0 0 0-1.06 0Z" clip-rule="evenodd" />
+  </svg>
+</button>
+
+
           </div>
       
           <button onclick="redirectToResidential()" class="mt-14 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800">
@@ -399,23 +428,32 @@
     
         <div class="relative mt-10">
           <div id="carousel-commercial" class="flex gap-4 transition-transform duration-500 ease-in-out overflow-x-hidden w-full">
-            <img src="./Assets/image.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image2.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image2.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image2.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image2.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image2.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image2.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
           </div>
-    
+        
           <!-- Navigation Arrows -->
-          <button id="prev-commercial" class="absolute top-1/2 left-0 -translate-y-1/2 bg-white text-green-900 p-3 rounded-full hover:bg-gray-200">
-            &#10094;
-          </button>
-          <button id="next-commercial" class="absolute top-1/2 right-0 -translate-y-1/2 bg-white text-green-900 p-3 rounded-full hover:bg-gray-200">
-            &#10095;
-          </button>
+          <button id="prev-commercial" 
+  class="absolute top-1/2 left-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text-white p-3 md:p-3 rounded-full hover:bg-green-800 hover:bg-opacity-70 shadow-md">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5 md:w-6 md:h-6">
+    <path fill-rule="evenodd" d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+  </svg>
+</button>
+
+<!-- Next Button -->
+<button id="next-commercial" 
+  class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-70 text-white p-3 md:p-3 rounded-full hover:bg-green-800 hover:bg-opacity-70 shadow-md">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5 md:w-6 md:h-6">
+    <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 0 0 1.06l2.47 2.47H3a.75.75 0 0 0 0 1.5h16.19l-2.47 2.47a.75.75 0 1 0 1.06 1.06l3.75-3.75a.75.75 0 0 0 0-1.06l-3.75-3.75a.75.75 0 0 0-1.06 0Z" clip-rule="evenodd" />
+  </svg>
+</button>
         </div>
+        
     
         <div class="mt-8">
           <button 
@@ -770,76 +808,110 @@
 
 
   const carouselC = document.getElementById('carousel-commercial');
-  const nextC = document.getElementById('next-commercial');
-  const prevC = document.getElementById('prev-commercial');
+  const nextBtnC = document.getElementById('next-commercial');
+  const prevBtnC = document.getElementById('prev-commercial');
 
-  let scrollC = 0;
-  const cardCWidth = document.querySelector('#carousel-commercial .gallery-cell').offsetWidth + 16;
+  let scrollAmountC = 0;
 
-  nextC.addEventListener('click', () => {
-    if (scrollC + cardCWidth * 3 >= carouselC.scrollWidth) {
-      scrollC = 0;
+  const updateCardWidthC = () => {
+    return document.querySelector('.gallery-cell').offsetWidth + 16;
+  }
+
+  let cardWidthC = updateCardWidthC();
+
+  nextBtnC.addEventListener('click', () => {
+    cardWidthC = updateCardWidthC();
+    if (scrollAmountC + cardWidthC * 3 >= carouselC.scrollWidth) {
+      scrollAmountC = 0;
     } else {
-      scrollC += cardCWidth;
+      scrollAmountC += cardWidthC;
     }
-    carouselC.scrollTo({ left: scrollC, behavior: 'smooth' });
+    carouselC.scrollTo({ left: scrollAmountC, behavior: 'smooth' });
   });
 
-  prevC.addEventListener('click', () => {
-    if (scrollC <= 0) {
-      scrollC = carouselC.scrollWidth - cardCWidth * 3;
+  prevBtnC.addEventListener('click', () => {
+    cardWidthC = updateCardWidthC();
+    if (scrollAmountC <= 0) {
+      scrollAmountC = carouselC.scrollWidth - cardWidthC * 3;
     } else {
-      scrollC -= cardCWidth;
+      scrollAmountC -= cardWidthC;
     }
-    carouselC.scrollTo({ left: scrollC, behavior: 'smooth' });
+    carouselC.scrollTo({ left: scrollAmountC, behavior: 'smooth' });
   });
 
   window.addEventListener('resize', () => {
-    scrollC = 0;
+    scrollAmountC = 0;
+    cardWidthC = updateCardWidthC();
     carouselC.scrollTo({ left: 0, behavior: 'smooth' });
   });
-
   const carouselAmenities = document.getElementById('carousel-amenities');
-  const nextBtnAmenities = document.getElementById('next-amenities');
-  const prevBtnAmenities = document.getElementById('prev-amenities');
+const nextBtnAmenities = document.getElementById('next-amenities');
+const prevBtnAmenities = document.getElementById('prev-amenities');
 
-  let scrollAmountAmenities = 0;
+let scrollAmountAmenities = 0;
+let autoSlideInterval;
 
-  function updateSlideWidth() {
-    const galleryCell = document.querySelector('#carousel-amenities .gallery-cell');
-    if (galleryCell) {
-      return galleryCell.offsetWidth + 16; // 16 for gap
-    }
-    return 0;
+function updateSlideWidth() {
+  const galleryCell = document.querySelector('#carousel-amenities .gallery-cell');
+  if (galleryCell) {
+    return galleryCell.offsetWidth + 16; // 16 for gap
   }
+  return 0;
+}
 
-  function scrollToNextAmenities() {
-    const slideWidth = updateSlideWidth();
-    if (scrollAmountAmenities + slideWidth * 5 >= carouselAmenities.scrollWidth) {
-      scrollAmountAmenities = 0;
-    } else {
-      scrollAmountAmenities += slideWidth;
-    }
-    carouselAmenities.scrollTo({ left: scrollAmountAmenities, behavior: 'smooth' });
-  }
-
-  function scrollToPrevAmenities() {
-    const slideWidth = updateSlideWidth();
-    if (scrollAmountAmenities <= 0) {
-      scrollAmountAmenities = carouselAmenities.scrollWidth - slideWidth * 5;
-    } else {
-      scrollAmountAmenities -= slideWidth;
-    }
-    carouselAmenities.scrollTo({ left: scrollAmountAmenities, behavior: 'smooth' });
-  }
-
-  nextBtnAmenities.addEventListener('click', scrollToNextAmenities);
-  prevBtnAmenities.addEventListener('click', scrollToPrevAmenities);
-
-  window.addEventListener('resize', () => {
+function scrollToNextAmenities() {
+  const slideWidth = updateSlideWidth();
+  if (scrollAmountAmenities + slideWidth * 5 >= carouselAmenities.scrollWidth) {
     scrollAmountAmenities = 0;
-    carouselAmenities.scrollTo({ left: 0, behavior: 'smooth' });
-  });
+  } else {
+    scrollAmountAmenities += slideWidth;
+  }
+  carouselAmenities.scrollTo({ left: scrollAmountAmenities, behavior: 'smooth' });
+}
+
+function scrollToPrevAmenities() {
+  const slideWidth = updateSlideWidth();
+  if (scrollAmountAmenities <= 0) {
+    scrollAmountAmenities = carouselAmenities.scrollWidth - slideWidth * 5;
+  } else {
+    scrollAmountAmenities -= slideWidth;
+  }
+  carouselAmenities.scrollTo({ left: scrollAmountAmenities, behavior: 'smooth' });
+}
+
+// Auto-slide functionality
+function startAutoSlide() {
+  autoSlideInterval = setInterval(scrollToNextAmenities, 3000); // Slide every 3 seconds
+}
+
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+// Event listeners for manual control
+nextBtnAmenities.addEventListener('click', () => {
+  stopAutoSlide(); // Stop auto-slide when user interacts
+  scrollToNextAmenities();
+  startAutoSlide(); // Restart auto-slide after user interaction
+});
+
+prevBtnAmenities.addEventListener('click', () => {
+  stopAutoSlide(); // Stop auto-slide when user interacts
+  scrollToPrevAmenities();
+  startAutoSlide(); // Restart auto-slide after user interaction
+});
+
+// Reset the slide on window resize
+window.addEventListener('resize', () => {
+  scrollAmountAmenities = 0;
+  carouselAmenities.scrollTo({ left: 0, behavior: 'smooth' });
+  stopAutoSlide();
+  startAutoSlide();
+});
+
+// Start the auto-slide when the page loads
+startAutoSlide();
+
 
   document.addEventListener('DOMContentLoaded', function() {
 
