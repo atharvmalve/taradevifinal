@@ -144,18 +144,18 @@
   <div class="pt-24 flex flex-col items-center gap-24 ">
 
     <!-- NAVBAR -->
-      <nav class="bg-[#001901] text-white  p-4 md:px-8 md:py-5 flex justify-between items-center fixed w-full top-0 z-50 shadow-lg text-lg md:text-xl">
+      <nav class="bg-[#001901] text-white  p-4 md:px-8 md:py-3 flex justify-between items-center fixed w-full top-0 z-50 shadow-lg text-lg md:text-xl">
         <!-- Logo and Title -->
-        <div class="flex items-center space-x-4">
-          <img src="/Assets/Logo.png" alt="Logo" class="h-8 md:h-10" />
+        <div class="flex items-center space-x-3">
+          <img src="/Assets/Logo.png" alt="Logo" class="h-8 md:h-8" />
           <div>
-            <h1 class="font-semibold leading-tight">Tara Devi’s Enclave</h1>
-            <p class="text-sm md:text-base opacity-80">Phase-1</p>
+            <h1 class="font-medium text-base leading-tight">Tara Devi’s Enclave</h1>
+            <p class="text-sm md:text-sm opacity-50">Phase-1</p>
           </div>
         </div>
 
         <!-- Desktop Nav Links -->
-        <div class="hidden md:flex space-x-8 text-gray-400 font-normal">
+        <div class="hidden md:flex space-x-8 text-gray-400 font-normal text-base">
           <a href="./index.html" class="nav-link">Home</a>
           <a href="#aboutus" class="nav-link">About Us</a>
           <a href="./commercial.html" class="nav-link">Commercial</a>
@@ -188,73 +188,101 @@
       </div>
       <!-- </div> -->
 
-      <!--Hero Section-->
-      <section class="relative w-full h-screen -mt-10 md:-mt-20 z-10">
-          <img
-              src="/Assets/hero-image.jpg"
-              alt="Hillside Haven"
-              class="w-full h-full object-cover"
-          />
-          <div
-              class="absolute top-1  md:top-1/3 md:left-20 text-white p-6 rounded-lg fade-in-up"
-          >
-              <h2 class="text-3xl md:text-7xl  text-center md:text-nowrap font-bold">
-                  Your Hillside<br />Haven Awaits
-              </h2>
-          </div>
-      
-          <!-- Floating Sidebar (Always on Top) -->
-          <div class="fixed h-fit md:top-1/3 md:right-0 md:-translate-y-1/2 flex flex-co md:space-y-0 z-100 
-                      bottom-0 right-0 w-full md:w-auto md:flex-col flex-row justify-around bg-white md:bg-transparent shadow-md md:shadow-none">
-              <!-- WhatsApp -->
-              <a href="https://wa.me/9871177761" target="_blank" 
-                 class="bg-green-700 p- flex items-center justify-center md:rounded-tl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
-                  <img src="/Assets/Whatsapp.png" alt="WhatsApp" class="w-6 h-6">
-              </a>
-              <!-- Location -->
-              <a href="https://wa.me/9871177761" target="_blank" 
-                 class="bg-red-700 p- flex items-center justify-center md:r md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
-                  <img src="/Assets/telephone.png" alt="Location" class="w-6 h-6">
-              </a>
-              <!-- Download -->
-              <a href="YOUR_FILE_LINK" download 
-                 class="bg-blue-600 p- flex items-center justify-center md:rounded-bl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
-                  <img src="/Assets/download.png" alt="Download" class="w-6 h-6">
-              </a>
-          </div>
+       <!--Hero Section-->
+       <section class="relative w-full h-[60vh] md:h-screen -mt-10 md:-mt-20 z-10 bg-black">
+        <img
+            src="/Assets/hero-image.jpg"
+            alt="Hillside Haven"
+            class="w-full h-full object-cover  "
+        />
+        <div
+            class="absolute top-1 left-20 md:top-1/3 md:left-20 text-white p-6 rounded-lg fade-in-up"
+        >
+            <h2 class="text-3xl md:text-6xl   text-center md:text-nowrap font-bold">
+                Your Hillside<br />Haven Awaits
+            </h2>
+        </div>
+    
+        <!-- Floating Sidebar (Always on Top) -->
+        <div class="fixed h-fit md:top-1/3 md:right-0 md:-translate-y-1/2 flex flex-co md:space-y-0 z-100 
+                    bottom-0 right-0 w-full md:w-auto md:flex-col flex-row justify-around bg-white md:bg-transparent shadow-md md:shadow-none">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/9871177761" target="_blank" 
+               class="bg-green-700 p- flex items-center justify-center md:rounded-tl-lg md:w-14 md:h-14 w-full h-14 shadow-md hover:opacity-80">
+                <img src="/Assets/Whatsapp.png" alt="WhatsApp" class="w-6 h-6">
+            </a>
+            <!-- Location -->
+            <a href="https://wa.me/9871177761" target="_blank" 
+               class="bg-red-700 p- flex items-center justify-center md:r md:w-14 md:h-14 w-full h-14 shadow-md hover:opacity-80">
+                <img src="/Assets/telephone.png" alt="Location" class="w-5 h-5">
+            </a>
+            <!-- Download -->
+            <a href="YOUR_FILE_LINK" download 
+               class="bg-blue-600 p- flex items-center justify-center md:rounded-bl-lg md:w-14 md:h-14 w-full h-14 shadow-md hover:opacity-80">
+                <img src="/Assets/download.png" alt="Download" class="w-6 h-6">
+            </a>
+        </div>
 
-          <!-- Box Grid -->
-           <div class="flex justify-center -mt-14">
-              <div class="w-fit grid grid-cols-2 sm:grid-cols-4   justify-center items-center md:w-fit  xl:w-1/2">
-             <div
-               class="  bg-gray-200 text-gray-800 md:py-6 md:px-8 py-2 px-2 w-fit md:text-xl text-center border-r-2 border-solid border-gray-300 rounded-l-lg font-semibold"
-             >
-               Gated Luxury Township
-             </div>
-             <div
-               class="bg-gray-200 text-gray-800 md:py-6 md:px-8 py-2 px-2 w-fit md:text-xl text-center border-r-2 border-solid border-gray-300 font-semibold rounded-r-lg md:rounded-none"
-             >
-               Construction in full swing
-             </div>
-             <div
-               class="bg-gray-200 text-gray-800 md:py-6 md:px-8 py-2 px-2 w-fit md:text-xl text-center border-r-2 border-solid border-gray-300 font-semibold rounded-l-lg md:rounded-none"
-             >
-             Spread over 2.25 Acres
-             </div>
-             <div
-               class="bg-gray-200 text-gray-800 md:py-6 md:px-8 py-5 px-2 w-fit md:text-xl text-center border-r-2 border-solid border-gray-00 rounded-r-lg font-semibold"
-             >
-             5 Kms from Mall Road
-             </div>
-              </div>
-           </div>
-      </section>
+        <!-- Box Grid -->
+        <div class="flex justify-center w-full md:w-full  py-4 md:py-12 -mt-28 md:-mt-28">
+          <div class="w-11/12 md:w-5/6 xl:w-2/3 bg-white border border-gray-300 rounded-2xl flex flex-col md:flex-row overflow-hidden">
+        
+            <!-- Item 1 -->
+            <div class="flex flex-col justify-center items-center flex-1 p-4 md:p-6">
+              <p class="text-gray-500 text-sm md:text-sm mb-1">Project Type</p>
+              <h2 class="text-gray-900 text-lg md:text-xl font-semibold leading-tight text-center break-words">
+                Gated Luxury<br />Township
+              </h2>
+            </div>
+        
+            <!-- Vertical Line -->
+            <div class="hidden md:block w-px bg-gray-300 my-6"></div>
+        
+            <!-- Item 2 -->
+            <div class="flex flex-col justify-center items-center flex-1 p-4 md:p-6">
+              <p class="text-gray-500 text-sm md:text-sm mb-1">Area</p>
+              <h2 class="text-gray-900 text-lg md:text-xl font-semibold leading-tight text-center">
+                2.25 Acres
+              </h2>
+            </div>
+        
+            <!-- Vertical Line -->
+            <div class="hidden md:block w-px bg-gray-300 my-6"></div>
+        
+            <!-- Item 3 -->
+            <div class="flex flex-col justify-center items-center flex-1 p-4 md:p-6">
+              <p class="text-gray-500 text-sm md:text-sm mb-1">Location</p>
+              <h2 class="text-gray-900 text-lg md:text-xl font-semibold leading-tight text-center break-words">
+                5 KM from<br />Mall Road
+              </h2>
+            </div>
+        
+            <!-- Vertical Line -->
+            <div class="hidden md:block w-px bg-gray-300 my-6"></div>
+        
+            <!-- Item 4 -->
+            <div class="flex flex-col justify-center items-center flex-1 p-4 md:p-6">
+              <p class="text-gray-500 text-sm md:text-sm mb-1">Status</p>
+              <h2 class="text-gray-900 text-lg md:text-xl font-semibold leading-tight text-center break-words">
+                Under<br />Construction
+              </h2>
+            </div>
+        
+          </div>
+        </div>
+        
+        
+        
+        
+    </section>
+
+
       
       
   
-      <!--More Information-->
+      <!--About Us-->
       <section class="max-w-5xl mx-auto text-center  px-4 mt-6 md:mt-0">
-        <h3 class="text-gray-500 uppercase tracking-widest text-xs md:text-sm">About Us</h3>
+        <h3 class="text-gray-700 uppercase tracking-widest text-xs md:text-sm">About Us</h3>
         <h2 class=" text-2xl md:text-3xl font-bold text-gray-900 mt-2">
           Introducing Taradevi's Enclave
         </h2>
@@ -262,13 +290,13 @@
         <!-- Description Section -->
          <div>
 
-           <p class="text-gray-700 mt-6 leading-relaxed text-base md:text-lg">
+           <p class="text-gray-700 mt-6 leading-relaxed text-sm md:text-lg">
              Tara Devi’s Enclave Phase 1 brings luxury living to Shimla, a hill station famous for its verdant scenery, magnificent mountains and old-world charm with colonial era architectural landmarks. The project, perched at 1800 meters above sea level, is located in New Shimla, the most premium location of Shimla. Spreading over 2.25 Acres, phase 1 provides an exclusive inventory of 108 residential units comprising of 2 BHK, 3 BHK and Duplex penthouses across 5 Residential towers and an exclusive ClubHouse. 
            </p>
-           <p class="text-gray-700 mt-6 leading-relaxed text-base md:text-lg">
+           <p class="text-gray-700 mt-6 leading-relaxed text-sm md:text-lg">
             A drive-in gated housing complex, the project offers adequate parking space to the residents. It has been designed to ensure that every unit receives the sun throughout the day and enjoys a breathtaking valley view. The sight of Tara Devi temples peeking over the horizon is the cherry on top. Luxury of green, perks of city-life and proximity to heritage architecture of Shimla - that is Tara Devi’s Enclave. The project is equipped with all modern amenities to ensure that you enjoy the epitome of luxury in every way. 
           </p>
-          <p class="text-gray-700 mt-6 leading-relaxed text-base md:text-lg">
+          <p class="text-gray-700 mt-6 leading-relaxed text-sm md:text-lg">
             In addition, there is a commercial plaza which shall have convenience stores, super mart, gymnasium, restaurant & café, boutique hotel with 20 rooms and a Banquet Hall with open Terrace.
           </p>
          </div>
