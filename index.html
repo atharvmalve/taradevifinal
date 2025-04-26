@@ -282,7 +282,7 @@
       
   
       <!--About Us-->
-      <section class="max-w-5xl mx-auto text-center  px-4 mt-32 md:mt-0">
+      <section class="max-w-5xl mx-auto text-center  px-4 mt-32 md:mt-16">
         <h3 class="text-gray-700 uppercase tracking-widest text-xs md:text-sm">About Us</h3>
         <h2 class=" text-2xl md:text-3xl font-bold text-gray-900 mt-2">
           Introducing Taradevi's Enclave
@@ -306,9 +306,9 @@
         <div class="w-[94%] md:w-11/12 xl:w-4/5 mx-auto mt-10 grid grid-cols-1 md:grid-cols-6 gap-3 md:gap-6 items-center text-center">
 
           <!-- Box 1 -->
-          <div class="flex flex-col items-center bg-white md:bg-transparent p-4 md:p-0 rounded-xl shadow md:shadow-none border md:border-none">
-            <h2 class="text-green-900 text-4xl md:text-5xl font-bold">30%</h2>
-            <p class="text-gray-700 text-[12px] md:text-sm mt-1">Area assigned to Residential buildings zone allocation</p>
+          <div class="flex flex-col items-center bg-white md:bg-transparent p-4 md:p-0 rounded-xl  md:shadow-none border md:border-none">
+            <h2 class="text-green-950 text-4xl md:text-5xl font-bold">30%</h2>
+            <p class="text-gray-700 text-[12px] md:text-sm mt-1">Area assigned to Residential buildings </p>
           </div>
         
           <!-- Divider 1 -->
@@ -317,8 +317,8 @@
           </div>
         
           <!-- Box 2 -->
-          <div class="flex flex-col items-center bg-white md:bg-transparent p-4 md:p-0 rounded-xl shadow md:shadow-none border md:border-none">
-            <h2 class="text-green-900 text-4xl md:text-5xl font-bold">108</h2>
+          <div class="flex flex-col items-center bg-white md:bg-transparent p-4 md:p-0 rounded-xl  md:shadow-none border md:border-none">
+            <h2 class="text-green-950 text-4xl md:text-5xl font-bold">108</h2>
             <p class="text-gray-700 text-[12px] md:text-sm mt-1">Residential Units + Commercial Plaza</p>
           </div>
         
@@ -328,8 +328,8 @@
           </div>
         
           <!-- Box 3 -->
-          <div class="flex flex-col items-center bg-white md:bg-transparent p-4 md:p-0 rounded-xl shadow md:shadow-none border md:border-none md:col-span-2">
-            <h2 class="text-green-900 text-4xl md:text-5xl font-bold">2/3/4 BHK</h2>
+          <div class="flex flex-col items-center bg-white md:bg-transparent p-4 md:p-0 rounded-xl  md:shadow-none border md:border-none md:col-span-2">
+            <h2 class="text-green-950 text-4xl md:text-5xl font-bold">2/3/4 BHK</h2>
             <p class="text-gray-700 text-[12px] md:text-sm mt-1">Luxury Homes starting at ₹98 Lacs*</p>
           </div>
         
@@ -380,13 +380,13 @@
       
           <div class="relative mt-10">
             <div id="carousel" class="flex gap-4 transition-transform duration-500 ease-in-out overflow-x-hidden w-full">
-              <img src="./Assets/ir1.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-              <img src="./Assets/ir2.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-              <img src="./Assets/ir3.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-              <!-- <img src="./Assets/ir4.jpeg" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" /> -->
-              <img src="./Assets/ir5.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-              <img src="./Assets/ir6.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
-              <img src="./Assets/ir7.png" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
+              <img src="./Assets/ir1.png" loading="lazy" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
+              <img src="./Assets/ir2.png" loading="lazy" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
+              <img src="./Assets/ir3.png" loading="lazy" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
+              <!-- <img src="./Assets/ir4.jpeg" loading="lazy" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" /> -->
+              <img src="./Assets/ir5.png" loading="lazy" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
+              <img src="./Assets/ir6.png" loading="lazy" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
+              <img src="./Assets/ir7.png" loading="lazy" alt="img" class="w-full md:w-[30rem] h-80 object-cover rounded-lg gallery-cell" />
             </div>
       
             <!-- Navigation Arrows -->
@@ -409,9 +409,14 @@
 
           </div>
       
-          <button onclick="redirectToResidential()" class="mt-14 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800">
-            Explore Residential
-          </button>
+          <div class="mt-8">
+            <button
+            onclick="redirectToResidential()"
+              class="bg-green-900 text-white px-8 py-3 md:px-12 md:py-4 rounded-md text-base md:text-lg font-medium shadow-lg hover:bg-green-800 hover:scale-[1.03] active:scale-100 transition-all duration-300 ease-in-out"
+            >
+              Explore Residential
+            </button>
+          </div>
         </div>
       </section>
   
@@ -421,20 +426,20 @@
         <h3 class="text-gray-600 text-xs md:text-base">
           Life at Taradevi's Enclave
         </h3>
-        <h1 class="text-2xl md:text-3xl font-bold mt-2">Commercial</h1>
+        <h1 class="text-2xl md:text-3xl font-bold mt-1">Commercial</h1>
         <p class="px-4 md:px-80 text-gray-500 mt-4 text-xs md:text-base">
           A large complex around 22,000 sq ft fulfilling everyday requirements of life and beyond.
         </p>
     
         <div class="relative mt-10">
           <div id="carousel-commercial" class="flex gap-4 transition-transform duration-500 ease-in-out overflow-x-hidden w-full">
-            <img src="./Assets/image.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image2.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image2.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image2.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
-            <img src="./Assets/image.png" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image.png" loading="lazy" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image2.png" loading="lazy" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image.png" loading="lazy" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image2.png" loading="lazy" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image.png" loading="lazy" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image2.png" loading="lazy" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
+            <img src="./Assets/image.png" loading="lazy" alt="img" class="w-[30rem] h-[20rem] object-cover rounded-lg gallery-cell" />
           </div>
         
           <!-- Navigation Arrows -->
@@ -472,7 +477,7 @@
             Exclusive Amenities
           </h3>
           <h1 class="text-xl md:text-3xl font-bold mt-1">The Privileges of Ownership</h1>
-          <p class="px-4 md:px-48 text-gray-500 mt-1">
+          <p class="px-4 md:px-48 text-gray-500 mt-4">
             At Taradevi's Enclave, we believe in providing an exceptional living experience. Our thoughtfully curated amenities are designed to enhance your lifestyle, offering everything you need for relaxation, recreation, and convenience.
           </p>
       
@@ -487,17 +492,30 @@
             </div>
       
             <!-- Navigation Arrows -->
-            <button id="prev-amenities" class="absolute top-1/2 left-0 -translate-y-1/2 bg-white text-green-900 p-3 rounded-full hover:bg-gray-200">
-              &#10094;
-            </button>
-            <button id="next-amenities" class="absolute top-1/2 right-0 -translate-y-1/2 bg-white text-green-900 p-3 rounded-full hover:bg-gray-200">
-              &#10095;
-            </button>
+            <button id="prev-amenities" 
+  class="absolute top-1/2 left-2 -translate-y-1/2 bg-green-950 bg-opacity-20 text-white p-3 md:p-3 rounded-full hover:bg-green-800 hover:bg-opacity-20 shadow-md">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5 md:w-6 md:h-6">
+    <path fill-rule="evenodd" d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+  </svg>
+</button>
+
+<!-- Next Button -->
+<button id="next-amenities" 
+  class="absolute top-1/2 right-2 -translate-y-1/2 bg-green-950 bg-opacity-20 text-white p-3 md:p-3 rounded-full hover:bg-green-800 hover:bg-opacity-20 shadow-md">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5 md:w-6 md:h-6">
+    <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 0 0 1.06l2.47 2.47H3a.75.75 0 0 0 0 1.5h16.19l-2.47 2.47a.75.75 0 1 0 1.06 1.06l3.75-3.75a.75.75 0 0 0 0-1.06l-3.75-3.75a.75.75 0 0 0-1.06 0Z" clip-rule="evenodd" />
+  </svg>
+</button>
           </div>
       
-          <button onclick="redirectToAmenities()" class="mt-14 bg-green-900 text-white px-9 py-3 rounded-md text-sm md:text-base font-medium hover:bg-green-800">
-            Explore Amenities
-          </button>
+          <div class="mt-12">
+            <button
+            onclick="redirectToAmenities()"
+              class="bg-green-900 text-white px-8 py-3 md:px-12 md:py-4 rounded-md text-base md:text-lg font-medium shadow-lg hover:bg-green-800 hover:scale-[1.03] active:scale-100 transition-all duration-300 ease-in-out"
+            >
+              Explore Amenities
+            </button>
+          </div>
         </div>
       </section>
 
@@ -506,7 +524,7 @@
         <div class="w-full max-w-6xl text-center">
           <h3 class="text-gray-600 text-sm md:text-base">Life at Taradevi's Enclave</h3>
           <h1 class="text-xl md:text-3xl font-bold mt-1">Gallery</h1>
-          <p class="text-gray-500 mt-1 md:px-48">
+          <p class="text-gray-500 mt-1 md:px-48 mt-4">
             Imagine yourself living at Taradevi's Enclave. Our gallery showcases the vibrant lifestyle and unparalleled beauty that define this exceptional community.
           </p>
       
@@ -514,92 +532,70 @@
           <section class="container mx-auto px-4 py-8">
             <!-- Tabs navigation -->
             <div class="flex flex-wrap justify-center border-b mb-6">
-                <button class="tab-btn tab-active px-6 py-3 text-lg focus:outline-none" data-tab="site-plan">Interior/Exterior</button>
-                <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-abc">Updates</button>
-                <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-d">Media & Events</button>
-                <!-- <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-e">Block E</button> -->
+              <button class="tab-btn tab-active px-6 py-3 text-lg focus:outline-none" data-tab="site-plan">Interior/Exterior</button>
+              <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-abc">Updates</button>
+              <button class="tab-btn px-6 py-3 text-lg focus:outline-none" data-tab="block-d">Media & Events</button>
             </div>
-            
+      
             <!-- Tab content -->
             <div class="tab-content active" id="site-plan">
-                <!-- <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
-                    Experience luxury living and premium commercial spaces all in one place. Discover a vibrant community where residents enjoy top-notch amenities and businesses thrive in a bustling commercial hub.
-                </p> -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                  <div class=" shadow-lg rounded-lg p-4">
-                      <!-- <h3 class="text-center font-bold mb-2">Block A</h3> -->
-                      <img src="./Assets/E Block.png" alt="Block A Floor Plan" class="w-full h-auto rounded">
-                  </div>
-                  <div class=" shadow-lg rounded-lg p-4">
-                      <!-- <h3 class="text-center font-bold mb-2">Block B</h3> -->
-                      <img src="./Assets/aerial front day (1).jpg" alt="Block B Floor Plan" class="w-full h-auto rounded">
-                  </div>
-                  <div class=" shadow-lg rounded-lg p-4">
-                      <!-- <h3 class="text-center font-bold mb-2">Block C</h3> -->
-                      <img src="./Assets/AERIAL REAR_1.jpg" alt="Block C Floor Plan" class="w-full h-auto rounded">
-                  </div>
-                  <div class=" shadow-lg rounded-lg p-4">
-                    <!-- <h3 class="text-center font-bold mb-2">Block C</h3> -->
-                    <img src="./Assets/aerial side day (1).jpg" alt="Block C Floor Plan" class="w-full h-auto rounded">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                <div class="shadow-lg rounded-lg ">
+                  <img src="./Assets/E Block.png" loading="lazy" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
                 </div>
-                <div class=" shadow-lg rounded-lg p-4">
-                  <!-- <h3 class="text-center font-bold mb-2">Block C</h3> -->
-                  <img src="./Assets/aerial valley view day (4).jpg" alt="Block C Floor Plan" class="w-full h-auto rounded">
+                <div class="shadow-lg rounded-lg ">
+                  <img src="./Assets/aerial front day (1).jpg" loading="lazy" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+                </div>
+                <div class="shadow-lg rounded-lg ">
+                  <img src="./Assets/AERIAL REAR_1.jpg" loading="lazy" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+                </div>
+                <div class="shadow-lg rounded-lg ">
+                  <img src="./Assets/aerial side day (1).jpg" loading="lazy" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+                </div>
+                <div class="shadow-lg rounded-lg ">
+                  <img src="./Assets/aerial valley view day (4).jpg" loading="lazy" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+                </div>
+                <div class="shadow-lg rounded-lg ">
+                  <img src="./Assets/aerial valley view day (5).jpg" loading="lazy" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+                </div>
               </div>
-              <div class=" shadow-lg rounded-lg p-4">
-                <!-- <h3 class="text-center font-bold mb-2">Block C</h3> -->
-                <img src="./Assets/aerial valley view day (5).jpg" alt="Block C Floor Plan" class="w-full h-auto rounded">
             </div>
-            
-              </div>
-            </div>
-            
+      
             <div class="tab-content" id="block-abc">
-                <!-- <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
-                    Experience luxury living and premium commercial spaces all in one place. Block A, B, and C offer spacious floor plans with modern amenities designed for comfortable living.
-                </p> -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                  <div class="bg-white shadow-lg rounded-lg p-4">
-                      <!-- <h3 class="text-center font-bold mb-2">Block A</h3> -->
-                      <img src="./Assets/ir1.png" alt="Block A Floor Plan" class="w-full h-auto rounded">
-                  </div>
-                  <div class="bg-white shadow-lg rounded-lg p-4">
-                      <!-- <h3 class="text-center font-bold mb-2">Block B</h3> -->
-                      <img src="https://via.placeholder.com/300x400?text=Block+B+Floor+Plan" alt="Block B Floor Plan" class="w-full h-auto rounded">
-                  </div>
-                  <div class="bg-white shadow-lg rounded-lg p-4">
-                      <!-- <h3 class="text-center font-bold mb-2">Block C</h3> -->
-                      <img src="https://via.placeholder.com/300x400?text=Block+C+Floor+Plan" alt="Block C Floor Plan" class="w-full h-auto rounded">
-                  </div>
-                  <div class="bg-white shadow-lg rounded-lg p-4">
-                    <!-- <h3 class="text-center font-bold mb-2">Block C</h3> -->
-                    <img src="https://via.placeholder.com/300x400?text=Block+C+Floor+Plan" alt="Block C Floor Plan" class="w-full h-auto rounded">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                <div class="shadow-lg rounded-lg p-4">
+                  <img src="./Assets/ir1.png" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+                </div>
+                <div class="shadow-lg rounded-lg p-4">
+                  <img src="https://via.placeholder.com/300x400?text=Block+B+Floor+Plan" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+                </div>
+                <div class="shadow-lg rounded-lg p-4">
+                  <img src="https://via.placeholder.com/300x400?text=Block+C+Floor+Plan" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+                </div>
+                <div class="shadow-lg rounded-lg p-4">
+                  <img src="https://via.placeholder.com/300x400?text=Block+C+Floor+Plan" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
                 </div>
               </div>
             </div>
-            
+      
             <div class="tab-content" id="block-d">
-                <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
-                    Block D features our premium residential units with exclusive amenities and views. Each home is designed with attention to detail and comfort.
-                </p>
-                <div class="bg-white shadow-lg rounded-lg p-4 max-w-4xl mx-auto">
-                    <h3 class="text-center font-bold mb-2">Block D</h3>
-                    <img src="https://via.placeholder.com/800x400?text=Block+D+Floor+Plan" alt="Block D Floor Plan" class="w-full h-auto rounded">
-                </div>
+              <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
+                Block D features our premium residential units with exclusive amenities and views. Each home is designed with attention to detail and comfort.
+              </p>
+              <div class="bg-white shadow-lg rounded-lg p-4 max-w-4xl mx-auto">
+                <h3 class="text-center font-bold mb-2">Block D</h3>
+                <img src="https://via.placeholder.com/800x400?text=Block+D+Floor+Plan" alt="Gallery Image" class="w-full aspect-square object-cover rounded cursor-pointer gallery-image">
+              </div>
             </div>
-            
-            <div class="tab-content" id="block-e">
-                <p class="text-gray-600 mb-8 text-center max-w-4xl mx-auto">
-                    Block E offers our most luxurious residences with panoramic views and premium finishes. These exclusive homes represent the pinnacle of luxury living at Tara Devi's Enclave.
-                </p>
-                <div class="bg-white shadow-lg rounded-lg p-4 max-w-4xl mx-auto">
-                    <h3 class="text-center font-bold mb-2">Block E</h3>
-                    <img src="https://via.placeholder.com/800x400?text=Block+E+Floor+Plan" alt="Block E Floor Plan" class="w-full h-auto rounded">
-                </div>
-            </div>
-        </section>
+          </section>
         </div>
       </section>
+      
+      <!-- Modal for Fullscreen Image -->
+      <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden">
+        <img id="modal-image" src="" class="max-w-full max-h-full object-contain" />
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+      </div>
       
       
   
@@ -608,7 +604,7 @@
         <div class="w-full max-w-6xl text-center">
           <h3 class="text-gray-600 text-sm md:text-base">Location Advantages</h3>
           <h1 class="text-xl md:text-3xl font-bold mt-1">Prime Location in Shimla</h1>
-          <p class="text-gray-500 mt-1 md:px-40">
+          <p class="text-gray-500 mt-3 md:px-40 ">
             Discover the unparalleled advantages of Taradevi's Enclave's prime location of New Shimla.  
           </p>
       
@@ -616,6 +612,7 @@
           <div class="w-full flex justify-center mt-10">
             <img
               src="./Assets/map.jpg"
+              loading="lazy"
               alt="Location Map"
               class="w-full max-w-4xl rounded-lg object-cover"
             />
@@ -623,10 +620,10 @@
       
           <!-- Location Highlights -->
           <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center w-full">
-            <img src="./Assets/locationimage1.png" alt="Location 1" class="w-full max-w-[180px] aspect-video object-contain rounded" />
-            <img src="./Assets/locationimage2.png" alt="Location 2" class="w-full max-w-[180px] aspect-video object-contain rounded" />
-            <img src="./Assets/locationimage3.png" alt="Location 3" class="w-full max-w-[180px] aspect-video object-contain rounded" />
-            <img src="./Assets/locationimage4.png" alt="Location 4" class="w-full max-w-[180px] aspect-video object-contain rounded" />
+            <img src="./Assets/locationimage1.png" loading="lazy" alt="..." alt="Location 1" class="w-full max-w-[180px] aspect-video object-contain rounded" />
+            <img src="./Assets/locationimage2.png" loading="lazy" alt="..." alt="Location 2" class="w-full max-w-[180px] aspect-video object-contain rounded" />
+            <img src="./Assets/locationimage3.png" loading="lazy" alt="..." alt="Location 3" class="w-full max-w-[180px] aspect-video object-contain rounded" />
+            <img src="./Assets/locationimage4.png" loading="lazy" alt="..." alt="Location 4" class="w-full max-w-[180px] aspect-video object-contain rounded" />
           </div>
         </div>
       </section>
@@ -634,99 +631,99 @@
   
       <!-- Contact us-->
       <section
-        class="relative w-full h-full bg-cover bg-center"
-        style="background-image: url('./Assets/Formbackground.jpg')"
+      class="relative w-full h-full bg-cover bg-center"
+      style="background-image: url('./Assets/Formbackground.jpg')"
+    >
+      <div
+        class="bg-black bg-opacity-40 w-full h-full absolute top-0 left-0"
+      ></div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-10"
       >
-        <div
-          class="bg-black bg-opacity-40 w-full h-full absolute top-0 left-0"
-        ></div>
-  
-        <div
-          class="relative z-10 max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-10"
-        >
-          <!-- Left Section -->
-          <div class="text-white">
-            <h3 class="text-lg font-semibold uppercase">Contact Us</h3>
-            <h2 class="text-4xl font-bold mt-2">
-              Learn More About <br />
-              Taradevi's Enclave
-            </h2>
-            <p class="mt-3 text-gray-300">
-              Shiv mandir, near Sector-3, New Shimla, Shimla,<br />
-              Himachal Pradesh 171009
-            </p>
-            <div class="mt-6">
-              <iframe
-                class="w-full h-64 rounded-lg"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27396.285184236484!2d77.1408994!3d31.0845276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39057855b9eaaaab%3A0xf94b32aa3e4b5c1f!2sShimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1646904536475!5m2!1sen!2sin"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
-  
-          <!-- Right Section (Contact Form) -->
-          <div class="bg-black bg-opacity-80 p-6 rounded-lg text-white">
-            <h3 class="text-2xl font-semibold">Get in Touch</h3>
-            <p class="text-gray-300 text-sm mt-2">
-              We will get back to you in 24 hours
-            </p>
-  
-            <form id="contactForm" class="mt-4 space-y-4">
-              <div class="flex gap-3">
-                <input
-                  type="text"
-                  id="firstName"
-                  placeholder="First Name*"
-                  required
-                  class="w-1/2 px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                />
-                <input
-                  type="text"
-                  id="lastName"
-                  placeholder="Last Name"
-                  class="w-1/2 px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                />
-              </div>
-  
-              <input
-                type="email"
-                id="email"
-                placeholder="Email*"
-                required
-                class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-  
-              <div
-                class="flex items-center border bg-gray-800 rounded-lg px-4 py-2"
-              >
-                <span class="mr-2">🇮🇳 +91</span>
-                <input
-                  type="tel"
-                  id="phone"
-                  placeholder="Phone Number*"
-                  required
-                  class="w-full bg-transparent text-white focus:outline-none"
-                />
-              </div>
-  
-              <textarea
-                id="message"
-                placeholder="Inquiry"
-                rows="4"
-                class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              ></textarea>
-  
-              <button
-                type="submit"
-                class="w-full bg-green-600 hover:bg-green-900 text-white py-2 rounded-lg font-semibold"
-              >
-                Get in Touch
-              </button>
-            </form>
+        <!-- Left Section -->
+        <div class="text-white">
+          <h3 class="text-lg font-semibold uppercase">Contact Us</h3>
+          <h2 class="text-4xl font-bold mt-2">
+            Learn More About <br />
+            Taradevi's Enclave
+          </h2>
+          <p class="mt-3 text-gray-300">
+            Shiv mandir, near Sector-3, New Shimla, Shimla,<br />
+            Himachal Pradesh 171009
+          </p>
+          <div class="mt-6">
+            <iframe
+              class="w-full h-64 rounded-lg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27396.285184236484!2d77.1408994!3d31.0845276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39057855b9eaaaab%3A0xf94b32aa3e4b5c1f!2sShimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1646904536475!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
-      </section>
+
+        <!-- Right Section (Contact Form) -->
+        <div class="bg-black bg-opacity-80 p-6 rounded-lg text-white">
+          <h3 class="text-2xl font-semibold">Get in Touch</h3>
+          <p class="text-gray-300 text-sm mt-2">
+            We will get back to you in 24 hours
+          </p>
+
+          <form id="contactForm" class="mt-4 space-y-4">
+            <div class="flex gap-3">
+              <input
+                type="text"
+                id="firstName"
+                placeholder="First Name*"
+                required
+                class="w-1/2 px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last Name"
+                class="w-1/2 px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+            </div>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Email*"
+              required
+              class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+
+            <div
+              class="flex items-center border bg-gray-800 rounded-lg px-4 py-2"
+            >
+              <span class="mr-2">🇮🇳 +91</span>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number*"
+                required
+                class="w-full bg-transparent text-white focus:outline-none"
+              />
+            </div>
+
+            <textarea
+              id="message"
+              placeholder="Inquiry"
+              rows="4"
+              class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full bg-green-600 hover:bg-green-900 text-white py-2 rounded-lg font-semibold"
+            >
+              Get in Touch
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   
       <!--Footer-->
       <footer class="bg-[#001901] text-white text-center py-4 -mt-24 w-full">
@@ -744,6 +741,26 @@
         </p>
       </footer>
     </div>
+
+    <!-- Floating Sidebar (Always on Top) -->
+    <div class="fixed h-fit md:top-1/3 md:right-0 md:-translate-y-1/2 flex flex-co md:space-y-0 z-50 
+    bottom-0 right-0 w-full md:w-auto md:flex-col flex-row justify-around bg-white md:bg-transparent shadow-md md:shadow-none">
+<!-- WhatsApp -->
+<a href="https://wa.me/YOUR_NUMBER" target="_blank" 
+class="bg-green-700 p- flex items-center justify-center md:rounded-tl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
+<img src="/Assets/Whatsapp.png" alt="WhatsApp" class="w-6 h-6">
+</a>
+<!-- Location -->
+<a href="https://maps.google.com/?q=YOUR_LOCATION" target="_blank" 
+class="bg-red-700 p- flex items-center justify-center md:r md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
+<img src="/Assets/telephone.png" alt="Location" class="w-6 h-6">
+</a>
+<!-- Download -->
+<a href="YOUR_FILE_LINK" download 
+class="bg-blue-600 p- flex items-center justify-center md:rounded-bl-lg md:w-16 md:h-16 w-full h-14 shadow-md hover:opacity-80">
+<img src="/Assets/download.png" alt="Download" class="w-6 h-6">
+</a>
+</div>
 
     <script>
       // Active Page Highlighting
@@ -913,6 +930,8 @@ window.addEventListener('resize', () => {
 startAutoSlide();
 
 
+
+
   document.addEventListener('DOMContentLoaded', function() {
 
   const tabButtons = document.querySelectorAll('.tab-btn');
@@ -933,6 +952,55 @@ startAutoSlide();
             });
           });
 
+          const modal = document.getElementById('image-modal');
+  const modalImage = document.getElementById('modal-image');
+  const galleryImages = document.querySelectorAll('.gallery-image');
+
+  galleryImages.forEach((img) => {
+    img.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      modalImage.src = img.src;
+    });
+  });
+
+  function closeModal() {
+    modal.classList.add('hidden');
+    modalImage.src = '';
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // Optional: Tab functionality
+  document.querySelectorAll('.tab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('tab-active'));
+      btn.classList.add('tab-active');
+
+      const target = btn.dataset.tab;
+      document.querySelectorAll('.tab-content').forEach(tc => {
+        tc.classList.remove('active');
+        tc.classList.add('hidden');
+      });
+      const showTab = document.getElementById(target);
+      if (showTab) {
+        showTab.classList.remove('hidden');
+        showTab.classList.add('active');
+      }
+    });
+  });
+
+  function redirectToCommercial() {
+        window.location.href = "commercial.html";
+    }
+    function redirectToResidential() {
+        window.location.href = "residential.html";
+    }
+
+  function redirectToAmenities() {
+      window.location.href = "amenities.html";
+  }
  
     </script>
   </body>
